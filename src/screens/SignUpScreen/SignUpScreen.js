@@ -11,14 +11,19 @@ import CustomInput from "../../components/CustomInput";
 import CustomButton from "../../components/CustomButton";
 import CustomLink from "../../components/CustomLink";
 
-const SignInScreen = () => {
-  const [username, setUsername] = useState("");
+const SignUpScreen = () => {
+  const [fullname, setFullname] = useState("");
+  const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
   const { height } = useWindowDimensions();
 
+  const onRegisterPressed = () => {
+    console.warn("onRegisterPressed");
+  };
+
   const onSignInPressed = () => {
-    console.warn("Sign in");
+    console.warn("onSignIn Pressed");
   };
 
   const onForgotPasswordPressed = () => {
@@ -33,41 +38,48 @@ const SignInScreen = () => {
     <ScrollView showsVerticalScrollIndicator={false}>
       <View style={styles.root}>
         <Text style={styles.logo}>OneMoney</Text>
-        <Text style={styles.HelloText}>Hello Again </Text>
+        <Text style={styles.HelloText}>Let's get you started</Text>
         <Text style={styles.HelloMessage}>
-          It's good to see you back, we missed you.{" "}
+          Sign up to enjoy amazing loan offers{" "}
         </Text>
 
-        <Text style={styles.MailText}>E-mail</Text>
+        <Text style={styles.MailText}>Full name</Text>
+        <CustomInput
+          placeholder="Your name"
+          value={fullname}
+          setValue={setFullname}
+        />
+
+        <Text style={styles.MailTextSecond}>E-mail</Text>
         <CustomInput
           placeholder="name@example.com"
-          value={username}
-          setValue={setUsername}
+          value={email}
+          setValue={setEmail}
         />
 
         <Text style={styles.PasswordText}>Password</Text>
         <CustomInput
+          style={styles.passwordBox}
           placeholder="Your password"
           value={password}
           setValue={setPassword}
           secureTextEntry
         />
 
-        <CustomLink
-          style={styles.ForgotPassword}
-          text=" Forgot Password?"
-          onPress={onForgotPasswordPressed}
-        />
-
         <CustomButton
           style={styles.LoginButton}
-          text=" Login "
-          onPress={onSignInPressed}
+          text=" Register "
+          onPress={onRegisterPressed}
         />
 
-        <Text style={styles.NoAccount}>Don't have an account?</Text>
+        <Text style={styles.NoAccount}>
+          Already have an account?{" "}
+          <Text style={styles.linktext} onPress={onSignInPressed}>
+            Sign In
+          </Text>
+        </Text>
 
-        <CustomLink text=" Sign Up" onPress={onSignUpPressed} />
+        {/* <CustomLink text=" Sign In" onPress={onSignInPressed} /> */}
       </View>
     </ScrollView>
   );
@@ -80,11 +92,21 @@ const styles = StyleSheet.create({
     justifyContent: "flex-start",
   },
 
+  MailTextSecond: {
+    fontWeight: "300",
+    justifyContent: "flex-start",
+    marginTop: 15,
+  },
+
   PasswordText: {
     fontWeight: "300",
     // textAlign: 'left',
     justifyContent: "flex-start",
     paddingTop: 20,
+  },
+
+  passwordBox: {
+    marginBottom: 15,
   },
 
   logo: {
@@ -108,6 +130,10 @@ const styles = StyleSheet.create({
     textAlign: "center",
   },
 
+  linktext: {
+    color: "#FE9923",
+  },
+
   NoAccount: {
     textAlign: "center",
     paddingTop: 23,
@@ -118,7 +144,7 @@ const styles = StyleSheet.create({
   },
 
   LoginButton: {
-    paddingTop: 30,
+    marginTopTop: 50,
   },
 
   root: {
@@ -127,4 +153,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default SignInScreen;
+export default SignUpScreen;
