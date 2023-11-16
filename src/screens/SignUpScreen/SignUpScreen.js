@@ -1,11 +1,13 @@
 import {
   View,
   Text,
+  Image,
   StyleSheet,
   useWindowDimensions,
   ScrollView,
 } from "react-native";
 // import { Icon } from '@iconify/react';
+import Logo from "../../../assets/images/OneLogo.png";
 import React, { useState } from "react";
 import CustomInput from "../../components/CustomInput";
 import CustomButton from "../../components/CustomButton";
@@ -37,7 +39,7 @@ const SignUpScreen = () => {
   return (
     <ScrollView showsVerticalScrollIndicator={false}>
       <View style={styles.root}>
-        <Text style={styles.logo}>OneMoney</Text>
+        <Image source={Logo} style={styles.logo} resizeMode="contain" />
         <Text style={styles.HelloText}>Let's get you started</Text>
         <Text style={styles.HelloMessage}>
           Sign up to enjoy amazing loan offers{" "}
@@ -110,19 +112,26 @@ const styles = StyleSheet.create({
   },
 
   logo: {
-    fontWeight: "500",
-    fontSize: 24,
-    textAlign: "center",
+    width: "45%",
+    maxWidth: 300,
+    height: 50,
+    position: "relative",
+    left: 85,
+    top: 20,
   },
 
   HelloText: {
+    position: "relative",
+    top: 15,
     fontWeight: "400",
     fontSize: 20,
-    paddingTop: 40,
+    paddingTop: 80,
     textAlign: "center",
   },
 
   HelloMessage: {
+    position: "relative",
+    top: 15,
     paddingTop: 5,
     paddingBottom: 60,
     color: "#4E4E4E",

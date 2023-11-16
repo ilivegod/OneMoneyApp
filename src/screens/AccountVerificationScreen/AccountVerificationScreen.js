@@ -1,27 +1,29 @@
 import {
   View,
   Text,
-  Image,
   StyleSheet,
   useWindowDimensions,
   ScrollView,
 } from "react-native";
-import Logo from "../../../assets/images/OneLogo.png";
-import wave from "../../../assets/images/Onewaving.png";
 // import { Icon } from '@iconify/react';
 import React, { useState } from "react";
 import CustomInput from "../../components/CustomInput";
 import CustomButton from "../../components/CustomButton";
 import CustomLink from "../../components/CustomLink";
 
-const SignInScreen = () => {
-  const [username, setUsername] = useState("");
+const AccountVerificationScreen = () => {
+  const [fullname, setFullname] = useState("");
+  const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
   const { height } = useWindowDimensions();
 
+  const onRegisterPressed = () => {
+    console.warn("onRegisterPressed");
+  };
+
   const onSignInPressed = () => {
-    console.warn("Sign in");
+    console.warn("onSignIn Pressed");
   };
 
   const onForgotPasswordPressed = () => {
@@ -35,47 +37,47 @@ const SignInScreen = () => {
   return (
     <ScrollView showsVerticalScrollIndicator={false}>
       <View style={styles.root}>
-        <Image source={Logo} style={styles.logo} resizeMode="contain" />
-        {/* <Text style={styles.logo}>OneMoney</Text> */}
-        <Text style={styles.HelloText}>Hello Again </Text>
-        <Image source={wave} style={styles.wave} resizeMode="contain" />
-        <Text style={styles.HelloMessage}>
-          It's good to see you back, we missed you.{" "}
-        </Text>
+        {/* <Text style={styles.shield}>OneMoney</Text> */}
+        <Text style={styles.HelloText}>Please verify your mail</Text>
+        <Text style={styles.HelloMessage}>we've sent a code to ... </Text>
 
-        <Text style={styles.MailText}>E-mail</Text>
+        <Text style={styles.MailText}>Full name</Text>
         <CustomInput
-          placeholder=" name@example.com"
-          value={username}
-          setValue={setUsername}
+          placeholder="Your name"
+          value={fullname}
+          setValue={setFullname}
+        />
+
+        <Text style={styles.MailTextSecond}>E-mail</Text>
+        <CustomInput
+          placeholder="name@example.com"
+          value={email}
+          setValue={setEmail}
         />
 
         <Text style={styles.PasswordText}>Password</Text>
         <CustomInput
+          style={styles.passwordBox}
           placeholder="Your password"
           value={password}
           setValue={setPassword}
           secureTextEntry
         />
 
-        <CustomLink
-          style={styles.ForgotPassword}
-          text=" Forgot Password?"
-          onPress={onForgotPasswordPressed}
-        />
-
         <CustomButton
           style={styles.LoginButton}
-          text=" Login "
-          onPress={onSignInPressed}
+          text=" Register "
+          onPress={onRegisterPressed}
         />
 
         <Text style={styles.NoAccount}>
-          Don't have an account?{" "}
-          <Text style={styles.TextLink} onPress={onSignUpPressed}>
-            Sign Up
+          Already have an account?{" "}
+          <Text style={styles.linktext} onPress={onSignInPressed}>
+            Sign In
           </Text>
         </Text>
+
+        {/* <CustomLink text=" Sign In" onPress={onSignInPressed} /> */}
       </View>
     </ScrollView>
   );
@@ -88,6 +90,12 @@ const styles = StyleSheet.create({
     justifyContent: "flex-start",
   },
 
+  MailTextSecond: {
+    fontWeight: "300",
+    justifyContent: "flex-start",
+    marginTop: 15,
+  },
+
   PasswordText: {
     fontWeight: "300",
     // textAlign: 'left',
@@ -95,32 +103,33 @@ const styles = StyleSheet.create({
     paddingTop: 20,
   },
 
+  passwordBox: {
+    marginBottom: 15,
+  },
+
   logo: {
-    width: "45%",
-    maxWidth: 300,
-    height: 50,
-    position: "relative",
-    left: 85,
-    top: 20,
+    fontWeight: "500",
+    fontSize: 24,
+    textAlign: "center",
   },
 
   HelloText: {
-    position: "relative",
-    top: 15,
     fontWeight: "400",
     fontSize: 20,
-    paddingTop: 80,
+    paddingTop: 40,
     textAlign: "center",
   },
 
   HelloMessage: {
-    position: "relative",
-    top: -10,
-    paddingTop: 0,
+    paddingTop: 5,
     paddingBottom: 60,
     color: "#4E4E4E",
     fontSize: 11,
     textAlign: "center",
+  },
+
+  linktext: {
+    color: "#FE9923",
   },
 
   NoAccount: {
@@ -133,19 +142,7 @@ const styles = StyleSheet.create({
   },
 
   LoginButton: {
-    paddingTop: 30,
-  },
-
-  wave: {
-    width: "6.5%",
-    maxWidth: 300,
-    position: "relative",
-    left: 237,
-    bottom: 18,
-  },
-
-  TextLink: {
-    color: "#FE9923",
+    marginTopTop: 50,
   },
 
   root: {
@@ -154,4 +151,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default SignInScreen;
+export default AccountVerificationScreen;
