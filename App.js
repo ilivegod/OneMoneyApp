@@ -8,7 +8,7 @@ import SplashScreen from "./src/components/SplashScreen";
 export default function App() {
   return (
     <View style={styles.root}>
-      <SplashScreen />
+      <AccountVerificationScreen />
       <StatusBar style="auto" />
     </View>
   );
