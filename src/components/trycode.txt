@@ -1,0 +1,953 @@
+<div style={{width: '100%', height: '100%', position: 'relative', background: 'white'}}>
+    <div style={{width: 390, height: 52.97, left: 0, top: 0, position: 'absolute'}}>
+        <div style={{width: 390, height: 52.97, paddingTop: 16.44, paddingBottom: 12.79, paddingLeft: 24.66, paddingRight: 23.75, left: 0, top: 0, position: 'absolute', justifyContent: 'space-between', alignItems: 'center', display: 'inline-flex'}}>
+            <div style={{width: 49.32, height: 19.18, justifyContent: 'center', alignItems: 'center', display: 'flex'}}>
+                <div style={{width: 49.32, textAlign: 'center', color: 'black', fontSize: 17, fontFamily: 'SF Pro Text', fontWeight: '600', lineHeight: 22, wordWrap: 'break-word'}}>9:41</div>
+            </div>
+            <div style={{width: 116, height: 33.79, background: 'black', borderRadius: 16.90}} />
+            <div style={{width: 71.48, height: 11.87, justifyContent: 'center', alignItems: 'flex-start', gap: 6.76, display: 'flex'}}>
+                <img style={{width: 17.54, height: 10.96}} src="https://via.placeholder.com/18x11" />
+                <img style={{width: 15.53, height: 10.96}} src="https://via.placeholder.com/16x11" />
+                <div style={{width: 24.96, height: 11.87, position: 'relative'}}>
+                    <div style={{width: 22.83, height: 11.87, left: 0, top: 0, position: 'absolute', opacity: 0.35, borderRadius: 3.20, border: '0.91px black solid'}} />
+                    <div style={{width: 1.21, height: 3.65, left: 23.75, top: 4.26, position: 'absolute', opacity: 0.40, background: 'black'}}></div>
+                    <div style={{width: 19.18, height: 8.22, left: 1.83, top: 1.83, position: 'absolute', background: 'black', borderRadius: 1.22}} />
+                </div>
+            </div>
+        </div>
+        <div style={{width: 49.32, height: 19.18, left: 30.14, top: 21.01, position: 'absolute'}}>
+            <div style={{width: 60.28, height: 21.01, left: -5.14, top: -0.96, position: 'absolute', background: '#34C759', borderRadius: 29.23}} />
+            <div style={{width: 49.32, left: 0, top: -0.05, position: 'absolute', textAlign: 'center', color: 'white', fontSize: 17, fontFamily: 'SF Pro Text', fontWeight: '600', lineHeight: 22, wordWrap: 'break-word'}}>9:41</div>
+        </div>
+    </div>
+    <div style={{left: 25, top: 169, position: 'absolute', justifyContent: 'flex-start', alignItems: 'center', gap: 7, display: 'inline-flex'}}>
+        <img style={{width: 40, height: 40, background: 'linear-gradient(0deg, #D9D9D9 0%, #D9D9D9 100%)', borderRadius: 9999}} src="https://via.placeholder.com/40x40" />
+        <div style={{flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', display: 'inline-flex'}}>
+            <div style={{width: 106, color: 'black', fontSize: 17, fontFamily: 'Satoshi', fontWeight: '700', lineHeight: 22, wordWrap: 'break-word'}}>Hi Nana Ama, </div>
+            <div style={{color: '#4E4E4E', fontSize: 12, fontFamily: 'Satoshi', fontWeight: '400', lineHeight: 22, wordWrap: 'break-word'}}>Access loans from peers with ease today.</div>
+        </div>
+    </div>
+    <div style={{left: 24, top: 376, position: 'absolute', justifyContent: 'flex-start', alignItems: 'center', gap: 7, display: 'inline-flex'}}>
+        <div style={{color: 'black', fontSize: 14, fontFamily: 'Satoshi', fontWeight: '700', lineHeight: 22, wordWrap: 'break-word'}}>Borrowers</div>
+        <div style={{width: 11, height: 0, transform: 'rotate(90deg)', transformOrigin: '0 0', border: '1px #4E4E4E solid'}}></div>
+        <div style={{color: '#4E4E4E', fontSize: 14, fontFamily: 'Satoshi', fontWeight: '500', lineHeight: 22, wordWrap: 'break-word'}}>Lenders</div>
+    </div>
+    <div style={{left: 24, top: 428, position: 'absolute', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', gap: 12, display: 'inline-flex'}}>
+        <div style={{flexDirection: 'column', justifyContent: 'center', alignItems: 'flex-start', gap: 12, display: 'flex'}}>
+            <div style={{justifyContent: 'flex-start', alignItems: 'center', gap: 31, display: 'inline-flex'}}>
+                <div style={{flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', gap: 6, display: 'inline-flex'}}>
+                    <div style={{justifyContent: 'flex-start', alignItems: 'center', gap: 7, display: 'inline-flex'}}>
+                        <img style={{width: 24, height: 24, background: 'linear-gradient(0deg, #D9D9D9 0%, #D9D9D9 100%)', borderRadius: 9999}} src="https://via.placeholder.com/24x24" />
+                        <div style={{justifyContent: 'flex-start', alignItems: 'center', gap: 8, display: 'flex'}}>
+                            <div style={{color: 'black', fontSize: 12, fontFamily: 'Satoshi', fontWeight: '400', wordWrap: 'break-word'}}>Nathan Ofori</div>
+                            <div style={{justifyContent: 'flex-start', alignItems: 'center', gap: 3, display: 'flex'}}>
+                                <div style={{width: 9, height: 9, position: 'relative'}}>
+                                    <div style={{width: 8.29, height: 7.92, left: 0.35, top: 0.62, position: 'absolute'}}>
+                                        <div style={{width: 8.29, height: 7.92, left: 0, top: 0, position: 'absolute', background: '#FFB845'}}></div>
+                                        <div style={{width: 8.26, height: 7.92, left: 0, top: 0, position: 'absolute'}}>
+                                            <div style={{width: 4.15, height: 2.12, left: 0, top: 2.96, position: 'absolute', background: '#FFD243'}}></div>
+                                            <div style={{width: 1.41, height: 3.88, left: 2.74, top: 0, position: 'absolute', background: '#FFD243'}}></div>
+                                            <div style={{width: 4.11, height: 1.48, left: 4.15, top: 2.41, position: 'absolute', background: '#FFD243'}}></div>
+                                            <div style={{width: 2.70, height: 3.96, left: 4.15, top: 3.88, position: 'absolute', background: '#FFD243'}}></div>
+                                            <div style={{width: 2.57, height: 4.04, left: 1.58, top: 3.88, position: 'absolute', background: '#FFD243'}}></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style={{color: '#4E4E4E', fontSize: 10, fontFamily: 'Satoshi', fontWeight: '400', wordWrap: 'break-word'}}>5.0</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style={{justifyContent: 'flex-start', alignItems: 'flex-start', gap: 6, display: 'inline-flex'}}>
+                        <div style={{flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', gap: 5, display: 'inline-flex'}}>
+                            <div style={{color: '#4E4E4E', fontSize: 10, fontFamily: 'Satoshi', fontWeight: '400', wordWrap: 'break-word'}}>Expectation</div>
+                            <div style={{color: '#4E4E4E', fontSize: 10, fontFamily: 'Satoshi', fontWeight: '400', wordWrap: 'break-word'}}>Purpose</div>
+                            <div style={{color: '#4E4E4E', fontSize: 10, fontFamily: 'Satoshi', fontWeight: '400', wordWrap: 'break-word'}}>Repayment Duration</div>
+                            <div style={{color: '#4E4E4E', fontSize: 10, fontFamily: 'Satoshi', fontWeight: '400', wordWrap: 'break-word'}}>Loan Interest</div>
+                        </div>
+                        <div style={{flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', gap: 5, display: 'inline-flex'}}>
+                            <div style={{color: 'black', fontSize: 10, fontFamily: 'Satoshi', fontWeight: '500', wordWrap: 'break-word'}}>GHS 1,000.00 - GHS 3,000.00</div>
+                            <div style={{color: 'black', fontSize: 10, fontFamily: 'Satoshi', fontWeight: '500', wordWrap: 'break-word'}}>Education</div>
+                            <div style={{color: 'black', fontSize: 10, fontFamily: 'Satoshi', fontWeight: '500', wordWrap: 'break-word'}}>1 month</div>
+                            <div style={{color: 'black', fontSize: 10, fontFamily: 'Satoshi', fontWeight: '500', wordWrap: 'break-word'}}>30%</div>
+                        </div>
+                    </div>
+                </div>
+                <div style={{paddingLeft: 13, paddingRight: 13, paddingTop: 2, paddingBottom: 2, background: 'black', borderRadius: 24, justifyContent: 'flex-start', alignItems: 'center', gap: 10, display: 'flex'}}>
+                    <div style={{textAlign: 'center', color: 'white', fontSize: 14, fontFamily: 'Satoshi', fontWeight: '400', wordWrap: 'break-word'}}>View Loan</div>
+                </div>
+            </div>
+            <div style={{width: 342, height: 0, border: '1px #DDDDDD solid'}}></div>
+        </div>
+        <div style={{flexDirection: 'column', justifyContent: 'center', alignItems: 'flex-start', gap: 12, display: 'flex'}}>
+            <div style={{justifyContent: 'flex-start', alignItems: 'center', gap: 31, display: 'inline-flex'}}>
+                <div style={{flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', gap: 6, display: 'inline-flex'}}>
+                    <div style={{justifyContent: 'flex-end', alignItems: 'center', gap: 7, display: 'inline-flex'}}>
+                        <img style={{width: 24, height: 24, background: 'linear-gradient(0deg, #D9D9D9 0%, #D9D9D9 100%)', borderRadius: 9999}} src="https://via.placeholder.com/24x24" />
+                        <div style={{alignSelf: 'stretch', justifyContent: 'flex-start', alignItems: 'center', gap: 8, display: 'inline-flex'}}>
+                            <div style={{color: 'black', fontSize: 12, fontFamily: 'Satoshi', fontWeight: '400', wordWrap: 'break-word'}}>Bernard Odum</div>
+                            <div style={{justifyContent: 'flex-start', alignItems: 'center', gap: 3, display: 'flex'}}>
+                                <div style={{width: 9, height: 9, position: 'relative'}}>
+                                    <div style={{width: 8.29, height: 7.92, left: 0.35, top: 0.62, position: 'absolute'}}>
+                                        <div style={{width: 8.29, height: 7.92, left: 0, top: 0, position: 'absolute', background: '#FFB845'}}></div>
+                                        <div style={{width: 8.26, height: 7.92, left: 0, top: 0, position: 'absolute'}}>
+                                            <div style={{width: 4.15, height: 2.12, left: 0, top: 2.96, position: 'absolute', background: '#FFD243'}}></div>
+                                            <div style={{width: 1.41, height: 3.88, left: 2.74, top: 0, position: 'absolute', background: '#FFD243'}}></div>
+                                            <div style={{width: 4.11, height: 1.48, left: 4.15, top: 2.41, position: 'absolute', background: '#FFD243'}}></div>
+                                            <div style={{width: 2.70, height: 3.96, left: 4.15, top: 3.88, position: 'absolute', background: '#FFD243'}}></div>
+                                            <div style={{width: 2.57, height: 4.04, left: 1.58, top: 3.88, position: 'absolute', background: '#FFD243'}}></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style={{color: '#4E4E4E', fontSize: 10, fontFamily: 'Satoshi', fontWeight: '400', wordWrap: 'break-word'}}>5.0</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style={{justifyContent: 'flex-start', alignItems: 'flex-start', gap: 6, display: 'inline-flex'}}>
+                        <div style={{flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', gap: 5, display: 'inline-flex'}}>
+                            <div style={{color: '#4E4E4E', fontSize: 10, fontFamily: 'Satoshi', fontWeight: '400', wordWrap: 'break-word'}}>Expectation</div>
+                            <div style={{color: '#4E4E4E', fontSize: 10, fontFamily: 'Satoshi', fontWeight: '400', wordWrap: 'break-word'}}>Purpose</div>
+                            <div style={{color: '#4E4E4E', fontSize: 10, fontFamily: 'Satoshi', fontWeight: '400', wordWrap: 'break-word'}}>Repayment Duration</div>
+                            <div style={{color: '#4E4E4E', fontSize: 10, fontFamily: 'Satoshi', fontWeight: '400', wordWrap: 'break-word'}}>Loan Interest</div>
+                        </div>
+                        <div style={{flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', gap: 5, display: 'inline-flex'}}>
+                            <div style={{color: 'black', fontSize: 10, fontFamily: 'Satoshi', fontWeight: '500', wordWrap: 'break-word'}}>GHS 1,000.00 - GHS 3,000.00</div>
+                            <div style={{color: 'black', fontSize: 10, fontFamily: 'Satoshi', fontWeight: '500', wordWrap: 'break-word'}}>Education</div>
+                            <div style={{color: 'black', fontSize: 10, fontFamily: 'Satoshi', fontWeight: '500', wordWrap: 'break-word'}}>1 month</div>
+                            <div style={{color: 'black', fontSize: 10, fontFamily: 'Satoshi', fontWeight: '500', wordWrap: 'break-word'}}>30%</div>
+                        </div>
+                    </div>
+                </div>
+                <div style={{paddingLeft: 13, paddingRight: 13, paddingTop: 2, paddingBottom: 2, background: 'black', borderRadius: 24, justifyContent: 'flex-start', alignItems: 'center', gap: 10, display: 'flex'}}>
+                    <div style={{textAlign: 'center', color: 'white', fontSize: 14, fontFamily: 'Satoshi', fontWeight: '400', wordWrap: 'break-word'}}>View Loan</div>
+                </div>
+            </div>
+            <div style={{width: 342, height: 0, border: '1px #DDDDDD solid'}}></div>
+        </div>
+        <div style={{flexDirection: 'column', justifyContent: 'center', alignItems: 'flex-start', gap: 12, display: 'flex'}}>
+            <div style={{justifyContent: 'flex-start', alignItems: 'center', gap: 31, display: 'inline-flex'}}>
+                <div style={{flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', gap: 6, display: 'inline-flex'}}>
+                    <div style={{justifyContent: 'center', alignItems: 'center', gap: 7, display: 'inline-flex'}}>
+                        <img style={{width: 24, height: 24, background: 'linear-gradient(0deg, #D9D9D9 0%, #D9D9D9 100%)', borderRadius: 9999}} src="https://via.placeholder.com/24x24" />
+                        <div style={{alignSelf: 'stretch', justifyContent: 'flex-start', alignItems: 'center', gap: 8, display: 'inline-flex'}}>
+                            <div style={{color: 'black', fontSize: 12, fontFamily: 'Satoshi', fontWeight: '400', wordWrap: 'break-word'}}>Amina Ansah</div>
+                            <div style={{justifyContent: 'flex-start', alignItems: 'center', gap: 3, display: 'flex'}}>
+                                <div style={{width: 9, height: 9, position: 'relative'}}>
+                                    <div style={{width: 8.29, height: 7.92, left: 0.35, top: 0.62, position: 'absolute'}}>
+                                        <div style={{width: 8.29, height: 7.92, left: 0, top: 0, position: 'absolute', background: '#FFB845'}}></div>
+                                        <div style={{width: 8.26, height: 7.92, left: 0, top: 0, position: 'absolute'}}>
+                                            <div style={{width: 4.15, height: 2.12, left: 0, top: 2.96, position: 'absolute', background: '#FFD243'}}></div>
+                                            <div style={{width: 1.41, height: 3.88, left: 2.74, top: 0, position: 'absolute', background: '#FFD243'}}></div>
+                                            <div style={{width: 4.11, height: 1.48, left: 4.15, top: 2.41, position: 'absolute', background: '#FFD243'}}></div>
+                                            <div style={{width: 2.70, height: 3.96, left: 4.15, top: 3.88, position: 'absolute', background: '#FFD243'}}></div>
+                                            <div style={{width: 2.57, height: 4.04, left: 1.58, top: 3.88, position: 'absolute', background: '#FFD243'}}></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style={{color: '#4E4E4E', fontSize: 10, fontFamily: 'Satoshi', fontWeight: '400', wordWrap: 'break-word'}}>5.0</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style={{justifyContent: 'flex-start', alignItems: 'flex-start', gap: 6, display: 'inline-flex'}}>
+                        <div style={{flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', gap: 5, display: 'inline-flex'}}>
+                            <div style={{color: '#4E4E4E', fontSize: 10, fontFamily: 'Satoshi', fontWeight: '400', wordWrap: 'break-word'}}>Expectation</div>
+                            <div style={{color: '#4E4E4E', fontSize: 10, fontFamily: 'Satoshi', fontWeight: '400', wordWrap: 'break-word'}}>Purpose</div>
+                            <div style={{color: '#4E4E4E', fontSize: 10, fontFamily: 'Satoshi', fontWeight: '400', wordWrap: 'break-word'}}>Repayment Duration</div>
+                            <div style={{color: '#4E4E4E', fontSize: 10, fontFamily: 'Satoshi', fontWeight: '400', wordWrap: 'break-word'}}>Loan Interest</div>
+                        </div>
+                        <div style={{flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', gap: 5, display: 'inline-flex'}}>
+                            <div style={{color: 'black', fontSize: 10, fontFamily: 'Satoshi', fontWeight: '500', wordWrap: 'break-word'}}>GHS 1,000.00 - GHS 3,000.00</div>
+                            <div style={{color: 'black', fontSize: 10, fontFamily: 'Satoshi', fontWeight: '500', wordWrap: 'break-word'}}>Education</div>
+                            <div style={{color: 'black', fontSize: 10, fontFamily: 'Satoshi', fontWeight: '500', wordWrap: 'break-word'}}>1 month</div>
+                            <div style={{color: 'black', fontSize: 10, fontFamily: 'Satoshi', fontWeight: '500', wordWrap: 'break-word'}}>30%</div>
+                        </div>
+                    </div>
+                </div>
+                <div style={{paddingLeft: 13, paddingRight: 13, paddingTop: 2, paddingBottom: 2, background: 'black', borderRadius: 24, justifyContent: 'flex-start', alignItems: 'center', gap: 10, display: 'flex'}}>
+                    <div style={{textAlign: 'center', color: 'white', fontSize: 14, fontFamily: 'Satoshi', fontWeight: '400', wordWrap: 'break-word'}}>View Loan</div>
+                </div>
+            </div>
+            <div style={{width: 342, height: 0, border: '1px #DDDDDD solid'}}></div>
+        </div>
+        <div style={{flexDirection: 'column', justifyContent: 'center', alignItems: 'flex-start', gap: 12, display: 'flex'}}>
+            <div style={{justifyContent: 'flex-start', alignItems: 'center', gap: 31, display: 'inline-flex'}}>
+                <div style={{flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', gap: 6, display: 'inline-flex'}}>
+                    <div style={{justifyContent: 'flex-start', alignItems: 'center', gap: 7, display: 'inline-flex'}}>
+                        <img style={{width: 24, height: 24, background: 'linear-gradient(0deg, #D9D9D9 0%, #D9D9D9 100%)', borderRadius: 9999}} src="https://via.placeholder.com/24x24" />
+                        <div style={{justifyContent: 'flex-start', alignItems: 'center', gap: 8, display: 'flex'}}>
+                            <div style={{color: 'black', fontSize: 12, fontFamily: 'Satoshi', fontWeight: '400', wordWrap: 'break-word'}}>Sabina Alpha</div>
+                            <div style={{justifyContent: 'flex-start', alignItems: 'center', gap: 3, display: 'flex'}}>
+                                <div style={{width: 9, height: 9, position: 'relative'}}>
+                                    <div style={{width: 8.29, height: 7.92, left: 0.35, top: 0.62, position: 'absolute'}}>
+                                        <div style={{width: 8.29, height: 7.92, left: 0, top: 0, position: 'absolute', background: '#FFB845'}}></div>
+                                        <div style={{width: 8.26, height: 7.92, left: 0, top: 0, position: 'absolute'}}>
+                                            <div style={{width: 4.15, height: 2.12, left: 0, top: 2.96, position: 'absolute', background: '#FFD243'}}></div>
+                                            <div style={{width: 1.41, height: 3.88, left: 2.74, top: 0, position: 'absolute', background: '#FFD243'}}></div>
+                                            <div style={{width: 4.11, height: 1.48, left: 4.15, top: 2.41, position: 'absolute', background: '#FFD243'}}></div>
+                                            <div style={{width: 2.70, height: 3.96, left: 4.15, top: 3.88, position: 'absolute', background: '#FFD243'}}></div>
+                                            <div style={{width: 2.57, height: 4.04, left: 1.58, top: 3.88, position: 'absolute', background: '#FFD243'}}></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style={{color: '#4E4E4E', fontSize: 10, fontFamily: 'Satoshi', fontWeight: '400', wordWrap: 'break-word'}}>5.0</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style={{justifyContent: 'flex-start', alignItems: 'flex-start', gap: 6, display: 'inline-flex'}}>
+                        <div style={{flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', gap: 5, display: 'inline-flex'}}>
+                            <div style={{color: '#4E4E4E', fontSize: 10, fontFamily: 'Satoshi', fontWeight: '400', wordWrap: 'break-word'}}>Expectation</div>
+                            <div style={{color: '#4E4E4E', fontSize: 10, fontFamily: 'Satoshi', fontWeight: '400', wordWrap: 'break-word'}}>Purpose</div>
+                            <div style={{color: '#4E4E4E', fontSize: 10, fontFamily: 'Satoshi', fontWeight: '400', wordWrap: 'break-word'}}>Repayment Duration</div>
+                            <div style={{color: '#4E4E4E', fontSize: 10, fontFamily: 'Satoshi', fontWeight: '400', wordWrap: 'break-word'}}>Loan Interest</div>
+                        </div>
+                        <div style={{flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', gap: 5, display: 'inline-flex'}}>
+                            <div style={{color: 'black', fontSize: 10, fontFamily: 'Satoshi', fontWeight: '500', wordWrap: 'break-word'}}>GHS 1,000.00 - GHS 3,000.00</div>
+                            <div style={{color: 'black', fontSize: 10, fontFamily: 'Satoshi', fontWeight: '500', wordWrap: 'break-word'}}>Education</div>
+                            <div style={{color: 'black', fontSize: 10, fontFamily: 'Satoshi', fontWeight: '500', wordWrap: 'break-word'}}>1 month</div>
+                            <div style={{color: 'black', fontSize: 10, fontFamily: 'Satoshi', fontWeight: '500', wordWrap: 'break-word'}}>30%</div>
+                        </div>
+                    </div>
+                </div>
+                <div style={{paddingLeft: 13, paddingRight: 13, paddingTop: 2, paddingBottom: 2, background: 'black', borderRadius: 24, justifyContent: 'flex-start', alignItems: 'center', gap: 10, display: 'flex'}}>
+                    <div style={{textAlign: 'center', color: 'white', fontSize: 14, fontFamily: 'Satoshi', fontWeight: '400', wordWrap: 'break-word'}}>View Loan</div>
+                </div>
+            </div>
+            <div style={{width: 342, height: 0, border: '1px #DDDDDD solid'}}></div>
+        </div>
+        <div style={{flexDirection: 'column', justifyContent: 'center', alignItems: 'flex-start', gap: 12, display: 'flex'}}>
+            <div style={{justifyContent: 'flex-start', alignItems: 'center', gap: 31, display: 'inline-flex'}}>
+                <div style={{flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', gap: 6, display: 'inline-flex'}}>
+                    <div style={{justifyContent: 'flex-start', alignItems: 'center', gap: 7, display: 'inline-flex'}}>
+                        <img style={{width: 24, height: 24, background: 'linear-gradient(0deg, #D9D9D9 0%, #D9D9D9 100%)', borderRadius: 9999}} src="https://via.placeholder.com/24x24" />
+                        <div style={{justifyContent: 'flex-start', alignItems: 'center', gap: 8, display: 'flex'}}>
+                            <div style={{color: 'black', fontSize: 12, fontFamily: 'Satoshi', fontWeight: '400', wordWrap: 'break-word'}}>Gideon Smith</div>
+                            <div style={{justifyContent: 'flex-start', alignItems: 'center', gap: 3, display: 'flex'}}>
+                                <div style={{width: 9, height: 9, position: 'relative'}}>
+                                    <div style={{width: 8.29, height: 7.92, left: 0.35, top: 0.62, position: 'absolute'}}>
+                                        <div style={{width: 8.29, height: 7.92, left: 0, top: 0, position: 'absolute', background: '#FFB845'}}></div>
+                                        <div style={{width: 8.26, height: 7.92, left: 0, top: 0, position: 'absolute'}}>
+                                            <div style={{width: 4.15, height: 2.12, left: 0, top: 2.96, position: 'absolute', background: '#FFD243'}}></div>
+                                            <div style={{width: 1.41, height: 3.88, left: 2.74, top: 0, position: 'absolute', background: '#FFD243'}}></div>
+                                            <div style={{width: 4.11, height: 1.48, left: 4.15, top: 2.41, position: 'absolute', background: '#FFD243'}}></div>
+                                            <div style={{width: 2.70, height: 3.96, left: 4.15, top: 3.88, position: 'absolute', background: '#FFD243'}}></div>
+                                            <div style={{width: 2.57, height: 4.04, left: 1.58, top: 3.88, position: 'absolute', background: '#FFD243'}}></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style={{color: '#4E4E4E', fontSize: 10, fontFamily: 'Satoshi', fontWeight: '400', wordWrap: 'break-word'}}>5.0</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style={{justifyContent: 'flex-start', alignItems: 'flex-start', gap: 6, display: 'inline-flex'}}>
+                        <div style={{flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', gap: 5, display: 'inline-flex'}}>
+                            <div style={{color: '#4E4E4E', fontSize: 10, fontFamily: 'Satoshi', fontWeight: '400', wordWrap: 'break-word'}}>Expectation</div>
+                            <div style={{color: '#4E4E4E', fontSize: 10, fontFamily: 'Satoshi', fontWeight: '400', wordWrap: 'break-word'}}>Purpose</div>
+                            <div style={{color: '#4E4E4E', fontSize: 10, fontFamily: 'Satoshi', fontWeight: '400', wordWrap: 'break-word'}}>Repayment Duration</div>
+                            <div style={{color: '#4E4E4E', fontSize: 10, fontFamily: 'Satoshi', fontWeight: '400', wordWrap: 'break-word'}}>Loan Interest</div>
+                        </div>
+                        <div style={{flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', gap: 5, display: 'inline-flex'}}>
+                            <div style={{color: 'black', fontSize: 10, fontFamily: 'Satoshi', fontWeight: '500', wordWrap: 'break-word'}}>GHS 1,000.00 - GHS 3,000.00</div>
+                            <div style={{color: 'black', fontSize: 10, fontFamily: 'Satoshi', fontWeight: '500', wordWrap: 'break-word'}}>Education</div>
+                            <div style={{color: 'black', fontSize: 10, fontFamily: 'Satoshi', fontWeight: '500', wordWrap: 'break-word'}}>1 month</div>
+                            <div style={{color: 'black', fontSize: 10, fontFamily: 'Satoshi', fontWeight: '500', wordWrap: 'break-word'}}>30%</div>
+                        </div>
+                    </div>
+                </div>
+                <div style={{paddingLeft: 13, paddingRight: 13, paddingTop: 2, paddingBottom: 2, background: 'black', borderRadius: 24, justifyContent: 'flex-start', alignItems: 'center', gap: 10, display: 'flex'}}>
+                    <div style={{textAlign: 'center', color: 'white', fontSize: 14, fontFamily: 'Satoshi', fontWeight: '400', wordWrap: 'break-word'}}>View Loan</div>
+                </div>
+            </div>
+            <div style={{width: 342, height: 0, border: '1px #DDDDDD solid'}}></div>
+        </div>
+    </div>
+    <div style={{width: 391, left: -1, top: 775, position: 'absolute', background: 'white', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'center', gap: 8, display: 'inline-flex'}}>
+        <div style={{width: 391, height: 0, border: '1px #F1F1F1 solid'}}></div>
+        <div style={{justifyContent: 'flex-start', alignItems: 'center', gap: 52, display: 'inline-flex'}}>
+            <div style={{flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'center', display: 'inline-flex'}}>
+                <div style={{width: 24, height: 24, position: 'relative'}}>
+                    <div style={{width: 20.17, height: 21, left: 1.91, top: 1.50, position: 'absolute', background: 'black'}}></div>
+                </div>
+                <div style={{color: 'black', fontSize: 12, fontFamily: 'Satoshi', fontWeight: '400', lineHeight: 22, wordWrap: 'break-word'}}>Home</div>
+            </div>
+            <div style={{flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'center', display: 'inline-flex'}}>
+                <div style={{width: 24, height: 24, position: 'relative'}}>
+                    <div style={{width: 17.78, height: 19.50, left: 3.11, top: 2.25, position: 'absolute', background: '#C2C2C2'}}></div>
+                </div>
+                <div style={{color: '#C2C2C2', fontSize: 12, fontFamily: 'Satoshi', fontWeight: '400', lineHeight: 22, wordWrap: 'break-word'}}>Portfolio</div>
+            </div>
+            <div style={{flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'center', display: 'inline-flex'}}>
+                <div style={{width: 24, height: 24, position: 'relative'}}>
+                    <div style={{width: 15.76, height: 20.10, left: 4.12, top: 1.95, position: 'absolute', background: '#C2C2C2'}}></div>
+                </div>
+                <div style={{color: '#C2C2C2', fontSize: 12, fontFamily: 'Satoshi', fontWeight: '400', lineHeight: 22, wordWrap: 'break-word'}}>Notifications</div>
+            </div>
+            <div style={{flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'center', display: 'inline-flex'}}>
+                <div style={{width: 24, height: 24, position: 'relative'}}>
+                    <div style={{width: 18, height: 20, left: 3, top: 2, position: 'absolute', background: '#C2C2C2'}}></div>
+                </div>
+                <div style={{color: '#C2C2C2', fontSize: 12, fontFamily: 'Satoshi', fontWeight: '400', lineHeight: 22, wordWrap: 'break-word'}}>Settings</div>
+            </div>
+        </div>
+    </div>
+    <div style={{width: 342, height: 116, left: 24, top: 238, position: 'absolute', background: '#FFF3CF', borderRadius: 17, overflow: 'hidden'}}>
+        <img style={{width: 711.97, height: 623.93, left: -132.79, top: 107.99, position: 'absolute', transform: 'rotate(-53.29deg)', transformOrigin: '0 0'}} src="https://via.placeholder.com/712x624" />
+        <div style={{width: 144.75, height: 122.68, left: 215.25, top: -13, position: 'absolute'}}>
+            <div style={{width: 57.56, height: 57.56, left: 0, top: 41.25, position: 'absolute'}}>
+                <div style={{width: 49.58, height: 49.58, left: 3.99, top: 3.99, position: 'absolute', borderRadius: 28.49, overflow: 'hidden'}}>
+                    <div style={{width: 49.58, height: 49.58, left: 0, top: 0, position: 'absolute', background: '#F8F9FB', borderRadius: 9999}} />
+                    <div style={{width: 42.59, height: 42.59, left: 3.67, top: 8.13, position: 'absolute'}}>
+                        <div style={{width: 39.35, height: 42.59, left: 1.62, top: -0, position: 'absolute'}}>
+                            <div style={{width: 11.36, height: 14.04, left: 9.06, top: 11.62, position: 'absolute', background: '#2A2E6D'}}></div>
+                            <div style={{width: 11.36, height: 14.04, left: 18.57, top: 11.62, position: 'absolute', background: '#2A2E6D'}}></div>
+                            <div style={{width: 39.35, height: 14.18, left: 0, top: 28.41, position: 'absolute', background: '#F9C5B8'}}></div>
+                            <div style={{width: 9.28, height: 5.38, left: 15.03, top: 23.99, position: 'absolute', background: '#F9C5B8'}}></div>
+                            <div style={{width: 6.41, height: 3.21, left: 16.41, top: 23.99, position: 'absolute', background: '#F5A997'}}></div>
+                            <div style={{width: 3.19, height: 5.49, left: 27.35, top: 11.50, position: 'absolute'}}>
+                                <div style={{width: 3.19, height: 5.49, left: 0, top: 0, position: 'absolute', background: '#F5A997'}}></div>
+                                <div style={{width: 1.53, height: 3.23, left: 0.83, top: 1.13, position: 'absolute'}}>
+                                    <div style={{width: 1.19, height: 3.23, left: 0, top: 0, position: 'absolute', background: '#E9837B'}}></div>
+                                    <div style={{width: 1.46, height: 0.56, left: 0.06, top: 1.16, position: 'absolute', background: '#E9837B'}}></div>
+                                </div>
+                            </div>
+                            <div style={{width: 3.19, height: 5.49, left: 8.81, top: 11.50, position: 'absolute'}}>
+                                <div style={{width: 3.19, height: 5.49, left: 0, top: 0, position: 'absolute', background: '#F5A997'}}></div>
+                                <div style={{width: 1.53, height: 3.23, left: 0.83, top: 1.13, position: 'absolute'}}>
+                                    <div style={{width: 1.19, height: 3.23, left: 0.34, top: 0, position: 'absolute', background: '#E9837B'}}></div>
+                                    <div style={{width: 1.46, height: 0.56, left: 0, top: 1.16, position: 'absolute', background: '#E9837B'}}></div>
+                                </div>
+                            </div>
+                            <div style={{width: 17.58, height: 23.46, left: 10.81, top: 1.25, position: 'absolute', background: '#F9C5B8'}}></div>
+                            <div style={{width: 17.58, height: 13.46, left: 10.81, top: 11.25, position: 'absolute', background: '#2A2E6D'}}></div>
+                            <div style={{width: 39.35, height: 14.18, left: 0, top: 28.41, position: 'absolute', background: '#9CAAD8'}}></div>
+                            <div style={{width: 39.35, height: 14.18, left: 0, top: 28.41, position: 'absolute', background: '#FBA103'}}></div>
+                            <div style={{width: 11.96, height: 10.64, left: 13.62, top: 10.36, position: 'absolute'}}>
+                                <div style={{width: 11.96, height: 1.91, left: -0, top: 4.46, position: 'absolute'}}>
+                                    <div style={{width: 4.21, height: 1.91, left: 0, top: 0, position: 'absolute', background: '#F6AFA8'}}></div>
+                                    <div style={{width: 4.21, height: 1.91, left: 7.75, top: 0, position: 'absolute', background: '#F6AFA8'}}></div>
+                                </div>
+                                <div style={{width: 11.19, height: 1.34, left: 0.38, top: -0, position: 'absolute'}}>
+                                    <div style={{width: 3.31, height: 1.34, left: 0, top: 0, position: 'absolute', background: '#2A2E6D'}}></div>
+                                    <div style={{width: 3.31, height: 1.34, left: 7.87, top: -0, position: 'absolute', background: '#2A2E6D'}}></div>
+                                </div>
+                                <div style={{width: 1.43, height: 3.03, left: 4.81, top: 5.43, position: 'absolute', background: '#E9837B'}}></div>
+                                <div style={{width: 8.29, height: 2.60, left: 1.83, top: 1.86, position: 'absolute'}}>
+                                    <div style={{width: 1.38, height: 2.60, left: 0, top: 0, position: 'absolute', background: '#2A2D6B'}}></div>
+                                    <div style={{width: 1.38, height: 2.60, left: 6.90, top: 0, position: 'absolute', background: '#2A2D6B'}}></div>
+                                </div>
+                                <div style={{width: 3.69, height: 1.33, left: 4.13, top: 9.32, position: 'absolute', background: 'white'}}></div>
+                            </div>
+                            <div style={{width: 11.81, height: 13.84, left: 7.86, top: -0, position: 'absolute', background: '#2A2E6D'}}></div>
+                            <div style={{width: 11.81, height: 13.84, left: 19.68, top: -0, position: 'absolute', background: '#2A2E6D'}}></div>
+                            <div style={{width: 18.10, height: 7.42, left: 10.55, top: 9.61, position: 'absolute'}}>
+                                <div style={{width: 7.42, height: 7.42, left: 0.92, top: 0, position: 'absolute', background: 'white'}}></div>
+                                <div style={{width: 7.42, height: 7.42, left: 9.75, top: 0, position: 'absolute', background: 'white'}}></div>
+                                <div style={{width: 1.72, height: 0.69, left: -0, top: 4.25, position: 'absolute', background: 'white'}}></div>
+                                <div style={{width: 1.76, height: 0.69, left: 16.34, top: 4.25, position: 'absolute', background: 'white'}}></div>
+                                <div style={{width: 2.81, height: 1.26, left: 7.65, top: 2.84, position: 'absolute', background: 'white'}}></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style={{width: 57.56, height: 57.56, left: 0, top: 0, position: 'absolute', borderRadius: 9999, border: '0.57px #EBEBEB solid'}} />
+            </div>
+            <div style={{width: 57.56, height: 57.56, left: 63.26, top: 40.68, position: 'absolute'}}>
+                <div style={{width: 49.58, height: 49.58, left: 3.99, top: 3.99, position: 'absolute', borderRadius: 28.49, overflow: 'hidden'}}>
+                    <div style={{width: 49.58, height: 49.58, left: 0, top: 0, position: 'absolute', background: '#F8F9FB', borderRadius: 9999}} />
+                    <div style={{width: 41.37, height: 41.37, left: 4.09, top: 9.10, position: 'absolute'}}>
+                        <div style={{width: 36.25, height: 41.37, left: 2.56, top: -0, position: 'absolute'}}>
+                            <div style={{width: 32.04, height: 28.13, left: 2.03, top: 2.02, position: 'absolute', background: '#2A2E6D'}}></div>
+                            <div style={{width: 20.07, height: 2.80, left: 8.02, top: 16.93, position: 'absolute'}}>
+                                <div style={{width: 2.80, height: 2.80, left: 17.27, top: 0, position: 'absolute', background: 'white'}}></div>
+                                <div style={{width: 2.80, height: 2.80, left: 0, top: 0, position: 'absolute', background: 'white'}}></div>
+                            </div>
+                            <div style={{width: 36.25, height: 13.06, left: 0, top: 28.31, position: 'absolute', background: '#BA6B4B'}}></div>
+                            <div style={{width: 8.55, height: 4.96, left: 13.85, top: 24.24, position: 'absolute', background: '#BA6B4B'}}></div>
+                            <div style={{width: 5.90, height: 2.96, left: 15.11, top: 24.24, position: 'absolute', background: '#B05844'}}></div>
+                            <div style={{width: 2.94, height: 5.06, left: 25.20, top: 12.73, position: 'absolute'}}>
+                                <div style={{width: 2.94, height: 5.06, left: 0, top: 0, position: 'absolute', background: '#B05844'}}></div>
+                                <div style={{width: 1.41, height: 2.97, left: 0.77, top: 1.04, position: 'absolute'}}>
+                                    <div style={{width: 1.10, height: 2.97, left: 0, top: 0, position: 'absolute', background: '#853D30'}}></div>
+                                    <div style={{width: 1.35, height: 0.51, left: 0.06, top: 1.07, position: 'absolute', background: '#853D30'}}></div>
+                                </div>
+                            </div>
+                            <div style={{width: 2.94, height: 5.06, left: 8.11, top: 12.73, position: 'absolute'}}>
+                                <div style={{width: 2.94, height: 5.06, left: 0, top: 0, position: 'absolute', background: '#B05844'}}></div>
+                                <div style={{width: 1.41, height: 2.97, left: 0.77, top: 1.04, position: 'absolute'}}>
+                                    <div style={{width: 1.10, height: 2.97, left: 0.31, top: 0, position: 'absolute', background: '#853D30'}}></div>
+                                    <div style={{width: 1.35, height: 0.51, left: 0, top: 1.07, position: 'absolute', background: '#853D30'}}></div>
+                                </div>
+                            </div>
+                            <div style={{width: 16.19, height: 21.61, left: 9.96, top: 3.29, position: 'absolute', background: '#BA6B4B'}}></div>
+                            <div style={{width: 0.30, height: 4.83, left: 10.23, top: 11.58, position: 'absolute', background: '#2A2E6D'}}></div>
+                            <div style={{width: 18.84, height: 16.41, left: 8.93, top: -0, position: 'absolute', background: '#2A2E6D'}}></div>
+                            <div style={{width: 11.01, height: 9.56, left: 12.55, top: 11.58, position: 'absolute'}}>
+                                <div style={{width: 10.57, height: 1.34, left: 0.22, top: 0, position: 'absolute'}}>
+                                    <div style={{width: 3.89, height: 1.34, left: 6.68, top: 0, position: 'absolute', background: '#2A2E6D'}}></div>
+                                    <div style={{width: 3.89, height: 1.34, left: 0, top: 0, position: 'absolute', background: '#2A2E6D'}}></div>
+                                </div>
+                                <div style={{width: 11.01, height: 1.76, left: -0, top: 4.42, position: 'absolute'}}>
+                                    <div style={{width: 3.87, height: 1.76, left: 0, top: 0, position: 'absolute', background: '#A5513F'}}></div>
+                                    <div style={{width: 3.87, height: 1.76, left: 7.14, top: 0, position: 'absolute', background: '#A5513F'}}></div>
+                                </div>
+                                <div style={{width: 8.11, height: 1.68, left: 1.45, top: 1.58, position: 'absolute'}}>
+                                    <div style={{width: 1.75, height: 1.68, left: 0, top: 0, position: 'absolute', background: '#2A2D6B'}}></div>
+                                    <div style={{width: 1.75, height: 1.68, left: 6.36, top: 0, position: 'absolute', background: '#2A2D6B'}}></div>
+                                </div>
+                                <div style={{width: 1.32, height: 2.79, left: 4.67, top: 5.06, position: 'absolute', background: '#853D30'}}></div>
+                                <div style={{width: 4.05, height: 1, left: 3.48, top: 8.56, position: 'absolute', background: '#853D30'}}></div>
+                            </div>
+                            <div style={{width: 1.72, height: 1.72, left: 26.37, top: 16.93, position: 'absolute', background: 'white'}}></div>
+                            <div style={{width: 1.72, height: 1.72, left: 8.02, top: 16.93, position: 'absolute', background: 'white'}}></div>
+                            <div style={{width: 36.25, height: 9.49, left: -0, top: 31.88, position: 'absolute', background: '#FECD3D'}}></div>
+                        </div>
+                    </div>
+                </div>
+                <div style={{width: 57.56, height: 57.56, left: 0, top: 0, position: 'absolute', borderRadius: 9999, border: '0.57px #EBEBEB solid'}} />
+            </div>
+            <div style={{width: 13.68, height: 13.68, left: 53.57, top: 60.62, position: 'absolute'}}>
+                <div style={{width: 13.68, height: 13.68, left: 0, top: 0, position: 'absolute'}}>
+                    <div style={{width: 13.68, height: 13.68, left: 0, top: 0, position: 'absolute'}}></div>
+                    <div style={{width: 10.30, height: 9.73, left: 1.69, top: 1.97, position: 'absolute', background: '#2A2E6D'}}></div>
+                </div>
+            </div>
+            <img style={{width: 36.03, height: 36.03, left: 33.75, top: 0, position: 'absolute', boxShadow: '1.9552533626556396px 1.9552533626556396px 1.9552533626556396px ', filter: 'blur(1.96px)'}} src="https://via.placeholder.com/36x36" />
+            <img style={{width: 13.68, height: 13.68, left: 46.75, top: 109, position: 'absolute', boxShadow: '0.7421822547912598px 0.7421822547912598px 0.7421822547912598px ', filter: 'blur(0.74px)'}} src="https://via.placeholder.com/14x14" />
+            <img style={{width: 13.68, height: 13.68, left: 131.08, top: 44.67, position: 'absolute', boxShadow: '0.7421822547912598px 0.7421822547912598px 0.7421822547912598px ', filter: 'blur(0.74px)'}} src="https://via.placeholder.com/14x14" />
+            <div style={{width: 3.42, height: 3.42, left: 69.53, top: 95.39, position: 'absolute', background: '#E6E7BC', borderRadius: 9999}} />
+            <div style={{width: 3.42, height: 3.42, left: 137.91, top: 98.81, position: 'absolute', background: '#DC0000', borderRadius: 9999}} />
+        </div>
+        <div style={{width: 152, left: 19, top: 10, position: 'absolute', color: 'white', fontSize: 22.20, fontFamily: 'PolySans', fontWeight: '400', lineHeight: 24.60, wordWrap: 'break-word'}}>Lend or Borrow others today!</div>
+        <div style={{paddingLeft: 13, paddingRight: 13, paddingTop: 2, paddingBottom: 2, left: 19, top: 72, position: 'absolute', background: 'black', borderRadius: 24, justifyContent: 'flex-start', alignItems: 'flex-start', display: 'inline-flex'}}>
+            <div style={{textAlign: 'center', color: 'white', fontSize: 14, fontFamily: 'Satoshi', fontWeight: '400', wordWrap: 'break-word'}}>Start Now</div>
+            <div style={{width: 22, height: 22, position: 'relative', transform: 'rotate(90deg)', transformOrigin: '0 0'}}>
+                <div style={{width: 11.67, height: 7.13, left: 5.17, top: 7.33, position: 'absolute', background: 'white'}}></div>
+            </div>
+        </div>
+    </div>
+    <div style={{width: 342, height: 75, left: 24, top: 76, position: 'absolute', background: '#FFF6F5', borderRadius: 10, overflow: 'hidden', border: '1px #FDA29B solid'}}>
+        <div style={{width: 1, height: 1, left: 304, top: 9, position: 'absolute'}} />
+        <div style={{width: 10, height: 10, left: 324, top: 5, position: 'absolute'}}>
+            <div style={{width: 5, height: 5, left: 2.50, top: 2.50, position: 'absolute', border: '1.67px #F04438 solid'}}></div>
+        </div>
+        <div style={{width: 14, height: 14, left: 13, top: 10, position: 'absolute'}}>
+            <div style={{width: 11.67, height: 11.67, left: 1.17, top: 1.17, position: 'absolute', border: '1.67px #D92D20 solid'}}></div>
+        </div>
+        <div style={{left: 45, top: 8, position: 'absolute', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', gap: 9, display: 'inline-flex'}}>
+            <div style={{flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', display: 'flex'}}>
+                <div style={{color: 'black', fontSize: 14, fontFamily: 'Satoshi', fontWeight: '400', lineHeight: 20, wordWrap: 'break-word'}}>Update your profile to keep going.</div>
+                <div style={{color: '#4E4E4E', fontSize: 9.29, fontFamily: 'Satoshi', fontWeight: '400', lineHeight: 13.27, wordWrap: 'break-word'}}>This involves updating your profile picture and payment methods</div>
+            </div>
+            <div style={{justifyContent: 'center', alignItems: 'center', gap: 4.43, display: 'inline-flex'}}>
+                <div style={{color: 'black', fontSize: 14, fontFamily: 'Inter', fontWeight: '600', lineHeight: 20, wordWrap: 'break-word'}}>Update Now</div>
+                <div style={{width: 11.07, height: 11.07, position: 'relative'}}>
+                    <div style={{width: 6.46, height: 6.46, left: 2.31, top: 2.31, position: 'absolute', border: '0.92px black solid'}}></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+// 9:41
+color: 'black';
+ fontSize: 17;
+ fontFamily: 'SF Pro Text';
+ fontWeight: '600';
+ lineHeight: 22;
+ wordWrap: 'break-word'
+---
+// 9:41
+color: 'white';
+ fontSize: 17;
+ fontFamily: 'SF Pro Text';
+ fontWeight: '600';
+ lineHeight: 22;
+ wordWrap: 'break-word'
+---
+// Hi Nana Ama, 
+color: 'black';
+ fontSize: 17;
+ fontFamily: 'Satoshi';
+ fontWeight: '700';
+ lineHeight: 22;
+ wordWrap: 'break-word'
+---
+// Access loans from peers with ease today.
+color: '#4E4E4E';
+ fontSize: 12;
+ fontFamily: 'Satoshi';
+ fontWeight: '400';
+ lineHeight: 22;
+ wordWrap: 'break-word'
+---
+// Borrowers
+color: 'black';
+ fontSize: 14;
+ fontFamily: 'Satoshi';
+ fontWeight: '700';
+ lineHeight: 22;
+ wordWrap: 'break-word'
+---
+// Lenders
+color: '#4E4E4E';
+ fontSize: 14;
+ fontFamily: 'Satoshi';
+ fontWeight: '500';
+ lineHeight: 22;
+ wordWrap: 'break-word'
+---
+// Nathan Ofori
+color: 'black';
+ fontSize: 12;
+ fontFamily: 'Satoshi';
+ fontWeight: '400';
+ wordWrap: 'break-word'
+---
+// 5.0
+color: '#4E4E4E';
+ fontSize: 10;
+ fontFamily: 'Satoshi';
+ fontWeight: '400';
+ wordWrap: 'break-word'
+---
+// Expectation
+color: '#4E4E4E';
+ fontSize: 10;
+ fontFamily: 'Satoshi';
+ fontWeight: '400';
+ wordWrap: 'break-word'
+---
+// Purpose
+color: '#4E4E4E';
+ fontSize: 10;
+ fontFamily: 'Satoshi';
+ fontWeight: '400';
+ wordWrap: 'break-word'
+---
+// Repayment Duration
+color: '#4E4E4E';
+ fontSize: 10;
+ fontFamily: 'Satoshi';
+ fontWeight: '400';
+ wordWrap: 'break-word'
+---
+// Loan Interest
+color: '#4E4E4E';
+ fontSize: 10;
+ fontFamily: 'Satoshi';
+ fontWeight: '400';
+ wordWrap: 'break-word'
+---
+// GHS 1,000.00 - GHS 3,000.00
+color: 'black';
+ fontSize: 10;
+ fontFamily: 'Satoshi';
+ fontWeight: '500';
+ wordWrap: 'break-word'
+---
+// Education
+color: 'black';
+ fontSize: 10;
+ fontFamily: 'Satoshi';
+ fontWeight: '500';
+ wordWrap: 'break-word'
+---
+// 1 month
+color: 'black';
+ fontSize: 10;
+ fontFamily: 'Satoshi';
+ fontWeight: '500';
+ wordWrap: 'break-word'
+---
+// 30%
+color: 'black';
+ fontSize: 10;
+ fontFamily: 'Satoshi';
+ fontWeight: '500';
+ wordWrap: 'break-word'
+---
+// View Loan
+color: 'white';
+ fontSize: 14;
+ fontFamily: 'Satoshi';
+ fontWeight: '400';
+ wordWrap: 'break-word'
+---
+// Bernard Odum
+color: 'black';
+ fontSize: 12;
+ fontFamily: 'Satoshi';
+ fontWeight: '400';
+ wordWrap: 'break-word'
+---
+// 5.0
+color: '#4E4E4E';
+ fontSize: 10;
+ fontFamily: 'Satoshi';
+ fontWeight: '400';
+ wordWrap: 'break-word'
+---
+// Expectation
+color: '#4E4E4E';
+ fontSize: 10;
+ fontFamily: 'Satoshi';
+ fontWeight: '400';
+ wordWrap: 'break-word'
+---
+// Purpose
+color: '#4E4E4E';
+ fontSize: 10;
+ fontFamily: 'Satoshi';
+ fontWeight: '400';
+ wordWrap: 'break-word'
+---
+// Repayment Duration
+color: '#4E4E4E';
+ fontSize: 10;
+ fontFamily: 'Satoshi';
+ fontWeight: '400';
+ wordWrap: 'break-word'
+---
+// Loan Interest
+color: '#4E4E4E';
+ fontSize: 10;
+ fontFamily: 'Satoshi';
+ fontWeight: '400';
+ wordWrap: 'break-word'
+---
+// GHS 1,000.00 - GHS 3,000.00
+color: 'black';
+ fontSize: 10;
+ fontFamily: 'Satoshi';
+ fontWeight: '500';
+ wordWrap: 'break-word'
+---
+// Education
+color: 'black';
+ fontSize: 10;
+ fontFamily: 'Satoshi';
+ fontWeight: '500';
+ wordWrap: 'break-word'
+---
+// 1 month
+color: 'black';
+ fontSize: 10;
+ fontFamily: 'Satoshi';
+ fontWeight: '500';
+ wordWrap: 'break-word'
+---
+// 30%
+color: 'black';
+ fontSize: 10;
+ fontFamily: 'Satoshi';
+ fontWeight: '500';
+ wordWrap: 'break-word'
+---
+// View Loan
+color: 'white';
+ fontSize: 14;
+ fontFamily: 'Satoshi';
+ fontWeight: '400';
+ wordWrap: 'break-word'
+---
+// Amina Ansah
+color: 'black';
+ fontSize: 12;
+ fontFamily: 'Satoshi';
+ fontWeight: '400';
+ wordWrap: 'break-word'
+---
+// 5.0
+color: '#4E4E4E';
+ fontSize: 10;
+ fontFamily: 'Satoshi';
+ fontWeight: '400';
+ wordWrap: 'break-word'
+---
+// Expectation
+color: '#4E4E4E';
+ fontSize: 10;
+ fontFamily: 'Satoshi';
+ fontWeight: '400';
+ wordWrap: 'break-word'
+---
+// Purpose
+color: '#4E4E4E';
+ fontSize: 10;
+ fontFamily: 'Satoshi';
+ fontWeight: '400';
+ wordWrap: 'break-word'
+---
+// Repayment Duration
+color: '#4E4E4E';
+ fontSize: 10;
+ fontFamily: 'Satoshi';
+ fontWeight: '400';
+ wordWrap: 'break-word'
+---
+// Loan Interest
+color: '#4E4E4E';
+ fontSize: 10;
+ fontFamily: 'Satoshi';
+ fontWeight: '400';
+ wordWrap: 'break-word'
+---
+// GHS 1,000.00 - GHS 3,000.00
+color: 'black';
+ fontSize: 10;
+ fontFamily: 'Satoshi';
+ fontWeight: '500';
+ wordWrap: 'break-word'
+---
+// Education
+color: 'black';
+ fontSize: 10;
+ fontFamily: 'Satoshi';
+ fontWeight: '500';
+ wordWrap: 'break-word'
+---
+// 1 month
+color: 'black';
+ fontSize: 10;
+ fontFamily: 'Satoshi';
+ fontWeight: '500';
+ wordWrap: 'break-word'
+---
+// 30%
+color: 'black';
+ fontSize: 10;
+ fontFamily: 'Satoshi';
+ fontWeight: '500';
+ wordWrap: 'break-word'
+---
+// View Loan
+color: 'white';
+ fontSize: 14;
+ fontFamily: 'Satoshi';
+ fontWeight: '400';
+ wordWrap: 'break-word'
+---
+// Sabina Alpha
+color: 'black';
+ fontSize: 12;
+ fontFamily: 'Satoshi';
+ fontWeight: '400';
+ wordWrap: 'break-word'
+---
+// 5.0
+color: '#4E4E4E';
+ fontSize: 10;
+ fontFamily: 'Satoshi';
+ fontWeight: '400';
+ wordWrap: 'break-word'
+---
+// Expectation
+color: '#4E4E4E';
+ fontSize: 10;
+ fontFamily: 'Satoshi';
+ fontWeight: '400';
+ wordWrap: 'break-word'
+---
+// Purpose
+color: '#4E4E4E';
+ fontSize: 10;
+ fontFamily: 'Satoshi';
+ fontWeight: '400';
+ wordWrap: 'break-word'
+---
+// Repayment Duration
+color: '#4E4E4E';
+ fontSize: 10;
+ fontFamily: 'Satoshi';
+ fontWeight: '400';
+ wordWrap: 'break-word'
+---
+// Loan Interest
+color: '#4E4E4E';
+ fontSize: 10;
+ fontFamily: 'Satoshi';
+ fontWeight: '400';
+ wordWrap: 'break-word'
+---
+// GHS 1,000.00 - GHS 3,000.00
+color: 'black';
+ fontSize: 10;
+ fontFamily: 'Satoshi';
+ fontWeight: '500';
+ wordWrap: 'break-word'
+---
+// Education
+color: 'black';
+ fontSize: 10;
+ fontFamily: 'Satoshi';
+ fontWeight: '500';
+ wordWrap: 'break-word'
+---
+// 1 month
+color: 'black';
+ fontSize: 10;
+ fontFamily: 'Satoshi';
+ fontWeight: '500';
+ wordWrap: 'break-word'
+---
+// 30%
+color: 'black';
+ fontSize: 10;
+ fontFamily: 'Satoshi';
+ fontWeight: '500';
+ wordWrap: 'break-word'
+---
+// View Loan
+color: 'white';
+ fontSize: 14;
+ fontFamily: 'Satoshi';
+ fontWeight: '400';
+ wordWrap: 'break-word'
+---
+// Gideon Smith
+color: 'black';
+ fontSize: 12;
+ fontFamily: 'Satoshi';
+ fontWeight: '400';
+ wordWrap: 'break-word'
+---
+// 5.0
+color: '#4E4E4E';
+ fontSize: 10;
+ fontFamily: 'Satoshi';
+ fontWeight: '400';
+ wordWrap: 'break-word'
+---
+// Expectation
+color: '#4E4E4E';
+ fontSize: 10;
+ fontFamily: 'Satoshi';
+ fontWeight: '400';
+ wordWrap: 'break-word'
+---
+// Purpose
+color: '#4E4E4E';
+ fontSize: 10;
+ fontFamily: 'Satoshi';
+ fontWeight: '400';
+ wordWrap: 'break-word'
+---
+// Repayment Duration
+color: '#4E4E4E';
+ fontSize: 10;
+ fontFamily: 'Satoshi';
+ fontWeight: '400';
+ wordWrap: 'break-word'
+---
+// Loan Interest
+color: '#4E4E4E';
+ fontSize: 10;
+ fontFamily: 'Satoshi';
+ fontWeight: '400';
+ wordWrap: 'break-word'
+---
+// GHS 1,000.00 - GHS 3,000.00
+color: 'black';
+ fontSize: 10;
+ fontFamily: 'Satoshi';
+ fontWeight: '500';
+ wordWrap: 'break-word'
+---
+// Education
+color: 'black';
+ fontSize: 10;
+ fontFamily: 'Satoshi';
+ fontWeight: '500';
+ wordWrap: 'break-word'
+---
+// 1 month
+color: 'black';
+ fontSize: 10;
+ fontFamily: 'Satoshi';
+ fontWeight: '500';
+ wordWrap: 'break-word'
+---
+// 30%
+color: 'black';
+ fontSize: 10;
+ fontFamily: 'Satoshi';
+ fontWeight: '500';
+ wordWrap: 'break-word'
+---
+// View Loan
+color: 'white';
+ fontSize: 14;
+ fontFamily: 'Satoshi';
+ fontWeight: '400';
+ wordWrap: 'break-word'
+---
+// Home
+color: 'black';
+ fontSize: 12;
+ fontFamily: 'Satoshi';
+ fontWeight: '400';
+ lineHeight: 22;
+ wordWrap: 'break-word'
+---
+// Portfolio
+color: '#C2C2C2';
+ fontSize: 12;
+ fontFamily: 'Satoshi';
+ fontWeight: '400';
+ lineHeight: 22;
+ wordWrap: 'break-word'
+---
+// Notifications
+color: '#C2C2C2';
+ fontSize: 12;
+ fontFamily: 'Satoshi';
+ fontWeight: '400';
+ lineHeight: 22;
+ wordWrap: 'break-word'
+---
+// Settings
+color: '#C2C2C2';
+ fontSize: 12;
+ fontFamily: 'Satoshi';
+ fontWeight: '400';
+ lineHeight: 22;
+ wordWrap: 'break-word'
+---
+// Lend or Borrow others today!
+color: 'white';
+ fontSize: 22.20;
+ fontFamily: 'PolySans';
+ fontWeight: '400';
+ lineHeight: 24.60;
+ wordWrap: 'break-word'
+---
+// Start Now
+color: 'white';
+ fontSize: 14;
+ fontFamily: 'Satoshi';
+ fontWeight: '400';
+ wordWrap: 'break-word'
+---
+// Update your profile to keep going.
+color: 'black';
+ fontSize: 14;
+ fontFamily: 'Satoshi';
+ fontWeight: '400';
+ lineHeight: 20;
+ wordWrap: 'break-word'
+---
+// This involves updating your profile picture and payment methods
+color: '#4E4E4E';
+ fontSize: 9.29;
+ fontFamily: 'Satoshi';
+ fontWeight: '400';
+ lineHeight: 13.27;
+ wordWrap: 'break-word'
+---
+// Update Now
+color: 'black';
+ fontSize: 14;
+ fontFamily: 'Inter';
+ fontWeight: '600';
+ lineHeight: 20;
+ wordWrap: 'break-word'

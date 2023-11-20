@@ -10,28 +10,19 @@ import React, { useState } from "react";
 import CustomInput from "../../components/CustomInput";
 import CustomButton from "../../components/CustomButton";
 import CustomLink from "../../components/CustomLink";
+import RetryButton from "../../components/RetryButton";
 
 const AccountVerificationScreen = () => {
-  const [fullname, setFullname] = useState("");
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const [code, setCode] = useState("");
 
   const { height } = useWindowDimensions();
 
-  const onRegisterPressed = () => {
-    console.warn("onRegisterPressed");
+  const onConfirmPressed = () => {
+    console.warn("onConfirmPressed");
   };
 
-  const onSignInPressed = () => {
-    console.warn("onSignIn Pressed");
-  };
-
-  const onForgotPasswordPressed = () => {
-    console.warn("Forgot password pressed");
-  };
-
-  const onSignUpPressed = () => {
-    console.warn("onSignUpPress");
+  const onResendPressed = () => {
+    console.warn("onResendPress");
   };
 
   return (
@@ -41,39 +32,27 @@ const AccountVerificationScreen = () => {
         <Text style={styles.HelloText}>Please verify your mail</Text>
         <Text style={styles.HelloMessage}>we've sent a code to ... </Text>
 
-        <Text style={styles.MailText}>Full name</Text>
+        <Text style={styles.MailText}>Confirmation Code *</Text>
         <CustomInput
-          placeholder="Your name"
-          value={fullname}
-          setValue={setFullname}
+          placeholder="Enter your confirmation code"
+          value={code}
+          setValue={setCode}
         />
 
-        <Text style={styles.MailTextSecond}>E-mail</Text>
-        <CustomInput
-          placeholder="name@example.com"
-          value={email}
-          setValue={setEmail}
-        />
-
-        <Text style={styles.PasswordText}>Password</Text>
-        <CustomInput
-          style={styles.passwordBox}
-          placeholder="Your password"
-          value={password}
-          setValue={setPassword}
-          secureTextEntry
-        />
+        <RetryButton text="Retry after 115s" />
 
         <CustomButton
           style={styles.LoginButton}
-          text=" Register "
-          onPress={onRegisterPressed}
+          text=" Verify "
+          onPress={onConfirmPressed}
+          color="black"
+          backgroundColor="white"
         />
 
         <Text style={styles.NoAccount}>
-          Already have an account?{" "}
-          <Text style={styles.linktext} onPress={onSignInPressed}>
-            Sign In
+          Didn't get a code?{" "}
+          <Text style={styles.linktext} onPress={onResendPressed}>
+            Click to resend.
           </Text>
         </Text>
 
@@ -88,12 +67,7 @@ const styles = StyleSheet.create({
     fontWeight: "300",
     // textAlign: 'left',
     justifyContent: "flex-start",
-  },
-
-  MailTextSecond: {
-    fontWeight: "300",
-    justifyContent: "flex-start",
-    marginTop: 15,
+    marginBottom: 10,
   },
 
   PasswordText: {
@@ -130,6 +104,7 @@ const styles = StyleSheet.create({
 
   linktext: {
     color: "#FE9923",
+    textDecorationLine: "underline",
   },
 
   NoAccount: {

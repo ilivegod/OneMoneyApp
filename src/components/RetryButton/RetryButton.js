@@ -1,7 +1,7 @@
 import { View, Text, StyleSheet, Pressable } from "react-native";
 import React from "react";
 
-const CustomButton = ({
+const RetryButton = ({
   onPress,
   text,
   type = "PRIMARY",
@@ -17,14 +17,21 @@ const CustomButton = ({
 
 const styles = StyleSheet.create({
   container: {
-    width: "100%",
-    backgroundColor: "black",
+    width: "40%",
+    backgroundColor: "#F7F9FC",
 
-    padding: 15,
+    padding: 12,
     marginVertical: 15,
 
-    alignItems: "center",
     borderRadius: 100,
+    borderWidth: 0.2,
+    borderColor: "#515151",
+
+    display: "flex",
+    flexDirection: "row",
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
   },
 
   //   container_PRIMARY: {
@@ -34,8 +41,8 @@ const styles = StyleSheet.create({
   //   container_TERTIARY: {},
 
   text: {
-    fontWeight: "600",
-    color: "white",
+    fontWeight: "500",
+    color: "#515151",
   },
 
   //   text_TERTIARY: {
@@ -43,4 +50,4 @@ const styles = StyleSheet.create({
   //   },
 });
 
-export default CustomButton;
+export default RetryButton;

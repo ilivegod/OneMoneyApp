@@ -4,11 +4,12 @@ import SignInScreen from "./src/screens/SignInScreen";
 import SignUpScreen from "./src/screens/SignUpScreen";
 import AccountVerificationScreen from "./src/screens/AccountVerificationScreen";
 import SplashScreen from "./src/components/SplashScreen";
+import Navigation from "./src/navigation";
 
 export default function App() {
   return (
     <View style={styles.root}>
-      <AccountVerificationScreen />
+      <SplashScreen />
       <StatusBar style="auto" />
     </View>
   );
