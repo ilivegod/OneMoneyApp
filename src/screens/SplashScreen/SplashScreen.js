@@ -10,8 +10,8 @@ import {
 import LogoWhite from "../../../assets/images/OneLogoWhite.png";
 import SplashText from "../../../assets/images/OneSplashText.png";
 import React from "react";
-import CustomButton from "../CustomButton";
-import FlatButton from "../FlatButton";
+import CustomButton from "../../components/CustomButton";
+import FlatButton from "../../components/FlatButton";
 
 const SplashScreen = () => {
   const { height } = useWindowDimensions();

@@ -77,6 +77,7 @@ const SignUpScreen = () => {
         <Text style={styles.NoAccount}>
           Already have an account?{" "}
           <Text style={styles.linktext} onPress={onSignInPressed}>
+            {/* make a button */}
             Sign In
           </Text>
         </Text>

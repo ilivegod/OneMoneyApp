@@ -4,7 +4,7 @@ import React from "react";
 const CustomButton = ({
   onPress,
   text,
-  type = "PRIMARY",
+
   backgroundColor,
   color,
 }) => {
