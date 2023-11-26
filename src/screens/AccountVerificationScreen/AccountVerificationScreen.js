@@ -32,7 +32,7 @@ const AccountVerificationScreen = () => {
         <Text style={styles.HelloText}>Please verify your mail</Text>
         <Text style={styles.HelloMessage}>we've sent a code to ... </Text>
 
-        <Text style={styles.MailText}>Confirmation Code *</Text>
+        <Text style={styles.MailText}>Confirmation code *</Text>
         <CustomInput
           placeholder="Enter your confirmation code"
           value={code}
