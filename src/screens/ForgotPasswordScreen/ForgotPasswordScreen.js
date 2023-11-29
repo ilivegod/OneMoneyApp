@@ -5,6 +5,7 @@ import {
   useWindowDimensions,
   ScrollView,
   TouchableOpacity,
+  Image,
 } from "react-native";
 // import { Icon } from '@iconify/react';
 import React, { useState } from "react";
@@ -12,60 +13,52 @@ import CustomInput from "../../components/CustomInput";
 import CustomButton from "../../components/CustomButton";
 import CustomLink from "../../components/CustomLink";
 import RetryButton from "../../components/RetryButton";
+import padlock from "../../../assets/images/Lock.png";
 // import { TouchableOpacity } from "react-native-gesture-handler";
 
-import { useNavigation } from "@react-navigation/native";
-
-const AccountVerificationScreen = () => {
-  const [code, setCode] = useState("");
-
-  const [mail, setMail] = useState("sekajunior2014@gmail.com");
-
-  const [timer, setTimer] = useState("");
+const ForgotPasswordScreen = () => {
+  const [email, setEmail] = useState("");
 
   const { height } = useWindowDimensions();
 
-  const navigation = useNavigation();
-
-  const onVerifyPressed = () => {
-    console.warn("onVerifyPressed");
-
-    //verify user
-    navigation.navigate("Sign In");
+  const onResetPressed = () => {
+    console.warn("onResetPressed");
   };
 
-  const onResendPressed = () => {
-    console.warn("onResendPress");
+  const onLoginPressed = () => {
+    console.warn("onLoginPress");
   };
 
   return (
     <ScrollView showsVerticalScrollIndicator={false}>
       <View style={styles.root}>
+        {/* <Image source={padlock} style={styles.lock} resizeMode="contain" /> */}
+        <Image source={padlock} style={styles.lock} />
         {/* <Text style={styles.shield}>OneMoney</Text> */}
-        <Text style={styles.HelloText}>Please verify your mail</Text>
-        <Text style={styles.HelloMessage}>we've sent a code to {mail}</Text>
+        <Text style={styles.HelloText}>Reset Password</Text>
+        <Text style={styles.HelloMessage}>
+          we'll send you an e-mail to reset your password
+        </Text>
 
-        <Text style={styles.MailText}>Confirmation code *</Text>
+        <Text style={styles.MailText}>E-mail</Text>
         <CustomInput
-          placeholder="Enter your confirmation code"
-          value={code}
-          setValue={setCode}
+          placeholder="name@example.com "
+          value={email}
+          setValue={setEmail}
         />
-
-        <RetryButton text="Retry after 666s" />
 
         <CustomButton
           style={styles.LoginButton}
-          text=" Verify "
-          onPress={onVerifyPressed}
+          text=" Reset Password "
+          onPress={onResetPressed}
           color="black"
           backgroundColor="white"
         />
 
-        <TouchableOpacity onPress={onResendPressed}>
+        <TouchableOpacity onPress={onLoginPressed}>
           <Text style={styles.NoAccount}>
-            Didn't get a code?{" "}
-            <Text style={styles.linktext}>Click to resend.</Text>
+            You remember your password?{" "}
+            <Text style={styles.linktext}>Login.</Text>
           </Text>
         </TouchableOpacity>
 
@@ -76,6 +69,11 @@ const AccountVerificationScreen = () => {
 };
 
 const styles = StyleSheet.create({
+  lock: {
+    alignSelf: "center",
+    // width: 50,
+  },
+
   MailText: {
     fontWeight: "300",
     // textAlign: 'left',
@@ -140,4 +138,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default AccountVerificationScreen;
+export default ForgotPasswordScreen;

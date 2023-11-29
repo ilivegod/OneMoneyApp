@@ -5,6 +5,7 @@ import {
   StyleSheet,
   useWindowDimensions,
   ScrollView,
+  TouchableOpacity,
 } from "react-native";
 import Logo from "../../../assets/images/OneLogo.png";
 import wave from "../../../assets/images/Onewaving.png";
@@ -14,22 +15,31 @@ import CustomInput from "../../components/CustomInput";
 import CustomButton from "../../components/CustomButton";
 import CustomLink from "../../components/CustomLink";
 
+import { useNavigation } from "@react-navigation/native";
+
 const SignInScreen = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
   const { height } = useWindowDimensions();
+  const navigation = useNavigation();
 
   const onSignInPressed = () => {
     console.warn("Sign in");
+    //validate user
+    navigation.navigate("HomePage");
   };
 
   const onForgotPasswordPressed = () => {
     console.warn("Forgot password pressed");
+
+    navigation.navigate("ForgotPassword");
   };
 
   const onSignUpPressed = () => {
     console.warn("onSignUpPress");
+
+    navigation.navigate("SignUp");
   };
 
   return (
@@ -70,12 +80,14 @@ const SignInScreen = () => {
           onPress={onSignInPressed}
         />
 
-        <Text style={styles.NoAccount}>
-          Don't have an account?{" "}
-          <Text style={styles.TextLink} onPress={onSignUpPressed}>
-            Sign Up
-          </Text>
-        </Text>
+        <TouchableOpacity onPress={onSignUpPressed}>
+          <View style={styles.TextLink}>
+            <Text style={styles.NoAccount}>
+              Don't have an account?{" "}
+              <Text style={styles.YellowText}>Sign up</Text>
+            </Text>
+          </View>
+        </TouchableOpacity>
       </View>
     </ScrollView>
   );
@@ -124,9 +136,14 @@ const styles = StyleSheet.create({
   },
 
   NoAccount: {
-    textAlign: "center",
-    paddingTop: 23,
+    position: "absolute",
+    top: 20,
+    // textAlign: "center",
+    alignSelf: "center",
+    // paddingTop: 23,
   },
+
+  NoAccountView: {},
 
   ForgotPassword: {
     paddingTop: 30,
@@ -145,12 +162,18 @@ const styles = StyleSheet.create({
   },
 
   TextLink: {
+    backgroundColor: "black",
+    color: "#FE9923",
+  },
+
+  YellowText: {
     color: "#FE9923",
   },
 
   root: {
     // alignItems: "center",
-    paddingTop: 150,
+    marginTop: 100,
+    padding: 15,
   },
 });
 

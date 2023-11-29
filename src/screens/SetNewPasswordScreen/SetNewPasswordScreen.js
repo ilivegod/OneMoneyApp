@@ -5,6 +5,7 @@ import {
   useWindowDimensions,
   ScrollView,
   TouchableOpacity,
+  Image,
 } from "react-native";
 // import { Icon } from '@iconify/react';
 import React, { useState } from "react";
@@ -12,62 +13,56 @@ import CustomInput from "../../components/CustomInput";
 import CustomButton from "../../components/CustomButton";
 import CustomLink from "../../components/CustomLink";
 import RetryButton from "../../components/RetryButton";
+import padlock from "../../../assets/images/Lock.png";
 // import { TouchableOpacity } from "react-native-gesture-handler";
 
-import { useNavigation } from "@react-navigation/native";
-
-const AccountVerificationScreen = () => {
-  const [code, setCode] = useState("");
-
-  const [mail, setMail] = useState("sekajunior2014@gmail.com");
-
-  const [timer, setTimer] = useState("");
+const SetNewPasswordScreen = () => {
+  const [newPassword, setNewPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
 
   const { height } = useWindowDimensions();
 
-  const navigation = useNavigation();
-
-  const onVerifyPressed = () => {
-    console.warn("onVerifyPressed");
-
-    //verify user
-    navigation.navigate("Sign In");
-  };
-
-  const onResendPressed = () => {
-    console.warn("onResendPress");
+  const onSetNewPasswordPressed = () => {
+    console.warn("onSetNewPasswordPressed");
   };
 
   return (
     <ScrollView showsVerticalScrollIndicator={false}>
       <View style={styles.root}>
+        {/* <Image source={padlock} style={styles.lock} resizeMode="contain" /> */}
+        <Image source={padlock} style={styles.lock} />
         {/* <Text style={styles.shield}>OneMoney</Text> */}
-        <Text style={styles.HelloText}>Please verify your mail</Text>
-        <Text style={styles.HelloMessage}>we've sent a code to {mail}</Text>
+        <Text style={styles.HelloText}>Set new password</Text>
+        <Text style={styles.HelloMessage}>
+          Create a password that you will remember
+        </Text>
 
-        <Text style={styles.MailText}>Confirmation code *</Text>
+        <Text style={styles.MailText}>New password</Text>
         <CustomInput
-          placeholder="Enter your confirmation code"
-          value={code}
-          setValue={setCode}
+          placeholder="Your password "
+          value={newPassword}
+          setValue={setNewPassword}
         />
 
-        <RetryButton text="Retry after 666s" />
+        <Text style={styles.MailText2}>Confirm password</Text>
+        <CustomInput
+          placeholder="Your password "
+          value={confirmPassword}
+          setValue={setConfirmPassword}
+        />
+
+        <Text>
+          {" "}
+          {"\n"} {"\n"}
+        </Text>
 
         <CustomButton
           style={styles.LoginButton}
-          text=" Verify "
-          onPress={onVerifyPressed}
+          text=" Set new Password "
+          onPress={onSetNewPasswordPressed}
           color="black"
           backgroundColor="white"
         />
-
-        <TouchableOpacity onPress={onResendPressed}>
-          <Text style={styles.NoAccount}>
-            Didn't get a code?{" "}
-            <Text style={styles.linktext}>Click to resend.</Text>
-          </Text>
-        </TouchableOpacity>
 
         {/* <CustomLink text=" Sign In" onPress={onSignInPressed} /> */}
       </View>
@@ -76,10 +71,23 @@ const AccountVerificationScreen = () => {
 };
 
 const styles = StyleSheet.create({
+  lock: {
+    alignSelf: "center",
+    // width: 50,
+  },
+
   MailText: {
     fontWeight: "300",
     // textAlign: 'left',
     justifyContent: "flex-start",
+    marginBottom: 10,
+  },
+
+  MailText2: {
+    fontWeight: "300",
+    // textAlign: 'left',
+    justifyContent: "flex-start",
+    marginTop: 25,
     marginBottom: 10,
   },
 
@@ -135,9 +143,8 @@ const styles = StyleSheet.create({
 
   root: {
     // alignItems: "center",
-    marginTop: 100,
-    padding: 15,
+    paddingTop: 150,
   },
 });
 
-export default AccountVerificationScreen;
+export default SetNewPasswordScreen;

@@ -14,7 +14,17 @@ import StartNowBox from "../../components/StartNowBox/StartNowBox";
 import BorrowersList from "../../components/BorrowersList/BorrowersList";
 import Footer from "../../components/Footer/Footer";
 import HomeButton from "../../components/HomeButton";
+import { useNavigation } from "@react-navigation/native";
+
 const HomePage = () => {
+  const navigation = useNavigation();
+
+  // useLayoutEffect(() => {
+  //   navigation.setOptions({
+  //     headerShown: false,
+  //   });
+  // }, []);
+
   return (
     <SafeAreaView>
       <Text>HomePage</Text>

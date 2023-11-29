@@ -5,6 +5,7 @@ import {
   StyleSheet,
   useWindowDimensions,
   ScrollView,
+  TouchableOpacity,
 } from "react-native";
 // import { Icon } from '@iconify/react';
 import Logo from "../../../assets/images/OneLogo.png";
@@ -13,6 +14,8 @@ import CustomInput from "../../components/CustomInput";
 import CustomButton from "../../components/CustomButton";
 import CustomLink from "../../components/CustomLink";
 
+import { useNavigation } from "@react-navigation/native";
+
 const SignUpScreen = () => {
   const [fullname, setFullname] = useState("");
   const [email, setEmail] = useState("");
@@ -20,12 +23,19 @@ const SignUpScreen = () => {
 
   const { height } = useWindowDimensions();
 
+  const navigation = useNavigation();
+
   const onRegisterPressed = () => {
     console.warn("onRegisterPressed");
+
+    //Register user
+    navigation.navigate("AccountVerification");
   };
 
   const onSignInPressed = () => {
     console.warn("onSignIn Pressed");
+
+    navigation.navigate("SignIn");
   };
 
   const onForgotPasswordPressed = () => {
@@ -74,13 +84,14 @@ const SignUpScreen = () => {
           onPress={onRegisterPressed}
         />
 
-        <Text style={styles.NoAccount}>
-          Already have an account?{" "}
-          <Text style={styles.linktext} onPress={onSignInPressed}>
-            {/* make a button */}
-            Sign In
-          </Text>
-        </Text>
+        <TouchableOpacity onPress={onSignInPressed}>
+          <View style={styles.TextLink}>
+            <Text style={styles.NoAccount}>
+              Already have an account?{" "}
+              <Text style={styles.YellowText}>Sign In</Text>
+            </Text>
+          </View>
+        </TouchableOpacity>
 
         {/* <CustomLink text=" Sign In" onPress={onSignInPressed} /> */}
       </View>
@@ -140,13 +151,30 @@ const styles = StyleSheet.create({
     textAlign: "center",
   },
 
-  linktext: {
+  // linktext: {
+  //   color: "#FE9923",
+  // },
+
+  // NoAccount: {
+  //   textAlign: "center",
+  //   paddingTop: 23,
+  // },
+
+  NoAccount: {
+    position: "absolute",
+    top: 20,
+    // textAlign: "center",
+    alignSelf: "center",
+    // paddingTop: 23,
+  },
+
+  TextLink: {
+    backgroundColor: "black",
     color: "#FE9923",
   },
 
-  NoAccount: {
-    textAlign: "center",
-    paddingTop: 23,
+  YellowText: {
+    color: "#FE9923",
   },
 
   ForgotPassword: {
@@ -159,7 +187,8 @@ const styles = StyleSheet.create({
 
   root: {
     // alignItems: "center",
-    paddingTop: 150,
+    marginTop: 100,
+    padding: 15,
   },
 });
 

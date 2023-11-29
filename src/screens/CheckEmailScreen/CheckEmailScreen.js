@@ -5,6 +5,7 @@ import {
   useWindowDimensions,
   ScrollView,
   TouchableOpacity,
+  Image,
 } from "react-native";
 // import { Icon } from '@iconify/react';
 import React, { useState } from "react";
@@ -12,62 +13,62 @@ import CustomInput from "../../components/CustomInput";
 import CustomButton from "../../components/CustomButton";
 import CustomLink from "../../components/CustomLink";
 import RetryButton from "../../components/RetryButton";
+import mail from "../../../assets/images/Message.png";
 // import { TouchableOpacity } from "react-native-gesture-handler";
 
-import { useNavigation } from "@react-navigation/native";
+const CheckEmailScreen = () => {
+  const [email, setEmail] = useState("nicholasosei@gmail.com");
 
-const AccountVerificationScreen = () => {
-  const [code, setCode] = useState("");
-
-  const [mail, setMail] = useState("sekajunior2014@gmail.com");
-
-  const [timer, setTimer] = useState("");
+  // const [myText, setMyText] = useState("My Original Text");
 
   const { height } = useWindowDimensions();
 
-  const navigation = useNavigation();
-
-  const onVerifyPressed = () => {
-    console.warn("onVerifyPressed");
-
-    //verify user
-    navigation.navigate("Sign In");
+  const GotItPressed = () => {
+    console.warn("GotItPressed");
   };
 
-  const onResendPressed = () => {
-    console.warn("onResendPress");
+  const onLoginPressed = () => {
+    console.warn("onLoginPress");
   };
 
   return (
     <ScrollView showsVerticalScrollIndicator={false}>
       <View style={styles.root}>
+        {/* <Image source={padlock} style={styles.lock} resizeMode="contain" /> */}
+        <Image source={mail} style={styles.lock} />
         {/* <Text style={styles.shield}>OneMoney</Text> */}
-        <Text style={styles.HelloText}>Please verify your mail</Text>
-        <Text style={styles.HelloMessage}>we've sent a code to {mail}</Text>
+        <Text style={styles.HelloText}>Check email</Text>
+        <Text style={styles.HelloMessage}>
+          we've sent you instructions for resetting your password {"\n"} to{" "}
+          {email}
+        </Text>
 
-        <Text style={styles.MailText}>Confirmation code *</Text>
+        {/* <Text style={styles.MailText}>E-mail</Text>
         <CustomInput
-          placeholder="Enter your confirmation code"
-          value={code}
-          setValue={setCode}
-        />
-
-        <RetryButton text="Retry after 666s" />
+          placeholder="name@example.com "
+          value={email}
+          setValue={setEmail}
+        /> */}
 
         <CustomButton
           style={styles.LoginButton}
-          text=" Verify "
-          onPress={onVerifyPressed}
+          text=" Got it "
+          onPress={GotItPressed}
           color="black"
           backgroundColor="white"
         />
 
-        <TouchableOpacity onPress={onResendPressed}>
+        {/* <TouchableOpacity onPress={onLoginPressed}>
           <Text style={styles.NoAccount}>
-            Didn't get a code?{" "}
-            <Text style={styles.linktext}>Click to resend.</Text>
+            You remember your password?{" "}
+            <Text style={styles.linktext}>Login.</Text>
           </Text>
-        </TouchableOpacity>
+        </TouchableOpacity> */}
+
+        <Text style={styles.support}>
+          Didn't get any email? Check your junk mail folder. If {"\n"} you still
+          don't find it contact support.
+        </Text>
 
         {/* <CustomLink text=" Sign In" onPress={onSignInPressed} /> */}
       </View>
@@ -76,6 +77,11 @@ const AccountVerificationScreen = () => {
 };
 
 const styles = StyleSheet.create({
+  lock: {
+    alignSelf: "center",
+    // width: 50,
+  },
+
   MailText: {
     fontWeight: "300",
     // textAlign: 'left',
@@ -133,11 +139,16 @@ const styles = StyleSheet.create({
     marginTopTop: 50,
   },
 
+  support: {
+    color: "#4E4E4E",
+    textAlign: "center",
+    marginTop: 20,
+  },
+
   root: {
     // alignItems: "center",
-    marginTop: 100,
-    padding: 15,
+    paddingTop: 150,
   },
 });
 
-export default AccountVerificationScreen;
+export default CheckEmailScreen;
