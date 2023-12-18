@@ -19,7 +19,7 @@ const StartNowBox = () => {
     // </View>
 
     <ImageBackground source={box} style={styles.container}>
-      <Text style={styles.text}>Lend or Borrow {"\n"} others today!</Text>
+      <Text style={styles.textTitle}>Need huge {"\n"} funding?</Text>
       <Image source={group} style={styles.group} resizeMode="contain" />
       <Image source={group2} style={styles.group2} resizeMode="contain" />
       <Image source={arrows} style={styles.arrows} resizeMode="contain" />
@@ -68,15 +68,19 @@ const StartNowBox = () => {
 
 const styles = StyleSheet.create({
   container: {
-    height: 116,
+    height: 1,
     width: 342,
     position: "relative",
 
     marginBottom: 20,
+
+    alignItems: "center",
+    justifyContent: "center",
+    flexDirection: "row",
   },
 
-  text: {
-    fontWeight: "700",
+  textTitle: {
+    fontWeight: "400",
     fontSize: 22.2,
     color: "white",
     position: "absolute", // child

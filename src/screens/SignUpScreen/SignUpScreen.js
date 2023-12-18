@@ -15,21 +15,41 @@ import CustomButton from "../../components/CustomButton";
 import CustomLink from "../../components/CustomLink";
 
 import { useNavigation } from "@react-navigation/native";
+import { createUserWithEmailAndPassword } from "firebase/auth";
+import { auth } from "../../../firebase/firebase";
 
 const SignUpScreen = () => {
   const [fullname, setFullname] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [loading, setLoading] = useState(false);
 
   const { height } = useWindowDimensions();
 
   const navigation = useNavigation();
 
-  const onRegisterPressed = () => {
-    console.warn("onRegisterPressed");
+  // const onRegisterPressed = () => {
+  //   console.warn("onRegisterPressed");
 
-    //Register user
-    navigation.navigate("AccountVerification");
+  //   //Register user
+  //   navigation.navigate("AccountVerification");
+  // };
+
+  // handle sign up function to add to the button in order for firebase to work.
+  const onRegisterPressed = async () => {
+    setLoading(true);
+    await createUserWithEmailAndPassword(auth, email, password)
+      .then((userCredential) => {
+        const user = userCredential.user;
+        setLoading(false);
+        alert("account created succesfully :)");
+      })
+      .catch((err) => {
+        setLoading(false);
+        alert(err.message);
+      });
+    //validate user
+    //navigation.navigate("HomePage");
   };
 
   const onSignInPressed = () => {
@@ -80,7 +100,7 @@ const SignUpScreen = () => {
 
         <CustomButton
           style={styles.LoginButton}
-          text=" Register "
+          text={loading ? "Creating account..." : "Register"}
           onPress={onRegisterPressed}
         />
 

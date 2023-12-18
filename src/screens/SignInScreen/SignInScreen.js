@@ -16,18 +16,34 @@ import CustomButton from "../../components/CustomButton";
 import CustomLink from "../../components/CustomLink";
 
 import { useNavigation } from "@react-navigation/native";
+import { signInWithEmailAndPassword } from "firebase/auth";
+import { auth } from "../../../firebase/firebase";
 
 const SignInScreen = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+  const [loading, setLoading] = useState(false);
 
   const { height } = useWindowDimensions();
   const navigation = useNavigation();
 
-  const onSignInPressed = () => {
-    console.warn("Sign in");
+  // handle sign in function to add to the button in order for firebase to work.
+  const onSignInPressed = async () => {
+    setLoading(true);
+    await signInWithEmailAndPassword(auth, username, password)
+      .then((userCredential) => {
+        const user = userCredential.user;
+        setLoading(false);
+        alert("login succesful :)");
+        navigation.navigate("HomePage");
+      })
+
+      .catch((err) => {
+        setLoading(false);
+        alert("User does not exist");
+      });
     //validate user
-    navigation.navigate("HomePage");
+    //navigation.navigate("HomePage");
   };
 
   const onForgotPasswordPressed = () => {
@@ -37,8 +53,6 @@ const SignInScreen = () => {
   };
 
   const onSignUpPressed = () => {
-    console.warn("onSignUpPress");
-
     navigation.navigate("SignUp");
   };
 
@@ -57,6 +71,7 @@ const SignInScreen = () => {
         <CustomInput
           placeholder=" name@example.com"
           value={username}
+          //ChangeText={(text) => setUsername(text)}
           setValue={setUsername}
         />
 
@@ -64,6 +79,7 @@ const SignInScreen = () => {
         <CustomInput
           placeholder="Your password"
           value={password}
+          //onChangeText={(text) => setPassword(text)}
           setValue={setPassword}
           secureTextEntry
         />
@@ -76,7 +92,7 @@ const SignInScreen = () => {
 
         <CustomButton
           style={styles.LoginButton}
-          text=" Login "
+          text={loading ? "Signing in..." : "Sign in"}
           onPress={onSignInPressed}
         />
 

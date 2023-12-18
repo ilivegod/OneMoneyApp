@@ -14,9 +14,7 @@ const NameHeader = (fullName, nameMessage) => {
         {/* <Text style={style.fullName}> Hi {fullName}(" "),</Text> */}
         <Text style={styles.fullName}> Hi Nana Ama,</Text>
         {/* <Text style={style.nameMessage}>{nameMessage}</Text> */}
-        <Text style={styles.nameMessage}>
-          Get loans from peers with ease today.
-        </Text>
+        <Text style={styles.nameMessage}>Access loans from us today!</Text>
       </View>
     </View>
   );
