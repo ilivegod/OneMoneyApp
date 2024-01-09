@@ -20,6 +20,8 @@ import { useNavigation } from "@react-navigation/native";
 import plus from "../../../assets/images/gala_add.png";
 
 const HomePage = () => {
+  // const [name, setName] = useState("");
+  const [username, setUsername] = useState("");
   const navigation = useNavigation();
 
   const createAppPress = () => {
@@ -80,6 +82,14 @@ const HomePage = () => {
 
           <View style={styles.buttonRow}></View>
 
+          <ImageBackground
+            style={styles.BackImage}
+            resizeMode="contain"
+            source={require("../../../assets/images/Frame 1160464453.png")}
+          >
+            <Text>Need huge funding?</Text>
+          </ImageBackground>
+
           <Footer />
         </View>
       </ScrollView>
@@ -126,6 +136,14 @@ const styles = StyleSheet.create({
 
   boldText: {
     fontWeight: "700",
+  },
+
+  BackImage: {
+    padding: 15,
+    flex: 1,
+    height: 161,
+    width: 342,
+    position: "relative",
   },
 });
 

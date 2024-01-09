@@ -14,6 +14,8 @@ import CustomInput from "../../components/CustomInput";
 import CustomButton from "../../components/CustomButton";
 import CustomLink from "../../components/CustomLink";
 
+import { doc, setDoc } from "firebase/firestore";
+
 import { useNavigation } from "@react-navigation/native";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../../../firebase/firebase";
@@ -42,8 +44,15 @@ const SignUpScreen = () => {
       .then((userCredential) => {
         const user = userCredential.user;
         setLoading(false);
-        alert("account created succesfully :)");
+        navigation.navigate("SignIn");
+        setDoc(doc(db, "users", user.uid), {
+          Name: fullname,
+          Email: email,
+          CreatedAt: new Date().toUTCString(),
+          // alert(" :)");
+        });
       })
+      .then(() => "account created succesfully")
       .catch((err) => {
         setLoading(false);
         alert(err.message);

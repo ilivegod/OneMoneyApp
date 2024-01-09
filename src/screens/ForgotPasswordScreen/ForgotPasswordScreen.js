@@ -14,6 +14,7 @@ import CustomButton from "../../components/CustomButton";
 import CustomLink from "../../components/CustomLink";
 import RetryButton from "../../components/RetryButton";
 import padlock from "../../../assets/images/Lock.png";
+import { sendPasswordResetEmail } from "firebase/auth";
 // import { TouchableOpacity } from "react-native-gesture-handler";
 
 const ForgotPasswordScreen = () => {
@@ -21,8 +22,10 @@ const ForgotPasswordScreen = () => {
 
   const { height } = useWindowDimensions();
 
-  const onResetPressed = () => {
-    console.warn("onResetPressed");
+  const onResetPressed = async () => {
+    await sendPasswordResetEmail(auth, email)
+      .then(() => alert("password reset email sent"))
+      .catch((error) => console.log(error.message));
   };
 
   const onLoginPressed = () => {
