@@ -18,6 +18,8 @@ import Footer from "../../components/Footer/Footer";
 import HomeButton from "../../components/HomeButton";
 import { useNavigation } from "@react-navigation/native";
 import plus from "../../../assets/images/gala_add.png";
+import arrow from "../../../assets/images/OneMoneyarrow-right.png";
+import Faces from "../../../assets/images/Faces.png";
 
 const HomePage = () => {
   // const [name, setName] = useState("");
@@ -26,6 +28,10 @@ const HomePage = () => {
 
   const createAppPress = () => {
     console.warn("createAppPress");
+  };
+
+  const onPress = () => {
+    console.warn("contact sales pressed");
   };
 
   // useLayoutEffect(() => {
@@ -82,13 +88,27 @@ const HomePage = () => {
 
           <View style={styles.buttonRow}></View>
 
-          <ImageBackground
+          <View
             style={styles.BackImage}
-            resizeMode="contain"
-            source={require("../../../assets/images/Frame 1160464453.png")}
+            //resizeMode="contain"
+            //source={require("../../../assets/images/OneMoneyStartnow.png")}
           >
-            <Text>Need huge funding?</Text>
-          </ImageBackground>
+            <View style={styles.topFlex}>
+              <Text style={styles.mainText}>Need huge {"\n"} funding?</Text>
+              <Image source={Faces} style={styles.Faces} />
+            </View>
+
+            <Text style={styles.secondaryText}>
+              Are you a business owner? {"\n"} Need huge funding for business
+              operations? {"\n"} OneMoney has got a special offer for you.{" "}
+            </Text>
+            <TouchableOpacity onPress={onPress}>
+              <View style={styles.contactBtn}>
+                <Text style={styles.contactText}>Contact Sales</Text>
+                <Image source={arrow} style={styles.arrow} />
+              </View>
+            </TouchableOpacity>
+          </View>
 
           <Footer />
         </View>
@@ -116,7 +136,7 @@ const styles = StyleSheet.create({
 
     borderRadius: 20,
 
-    marginBottom: 25,
+    marginBottom: 35,
   },
 
   requestTitle: {
@@ -139,11 +159,65 @@ const styles = StyleSheet.create({
   },
 
   BackImage: {
+    // padding: 15,
+    // // flex: 1,
+    // height: 120,
+    // width: 342,
+    // position: "relative",
+
     padding: 15,
     flex: 1,
-    height: 161,
+    height: 167,
     width: 342,
     position: "relative",
+    color: "black",
+    backgroundColor: "#FA801B",
+
+    borderRadius: 20,
+
+    marginBottom: 25,
+  },
+
+  mainText: {
+    color: "white",
+    fontWeight: "700",
+    fontSize: 22.2,
+    marginBottom: 5,
+  },
+
+  topFlex: {
+    display: "flex",
+    flexDirection: "row",
+    //alignItems: "center",
+  },
+
+  Faces: {
+    position: "absolute",
+    top: 0,
+    left: 202,
+  },
+
+  secondaryText: {
+    color: "white",
+    fontWeight: "500",
+    marginBottom: 7,
+  },
+
+  contactBtn: {
+    left: 3,
+    display: "flex",
+    flexDirection: "row",
+    alignItems: "center",
+  },
+
+  contactText: {
+    fontWeight: "500",
+    fontSize: 15,
+  },
+
+  arrow: {
+    marginLeft: 5,
+    width: 15,
   },
 });
 

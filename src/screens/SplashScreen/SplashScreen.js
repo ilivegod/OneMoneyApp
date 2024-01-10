@@ -25,8 +25,6 @@ const SplashScreen = () => {
   const { height } = useWindowDimensions();
 
   const OnGetStartedPressed = () => {
-    console.warn("OnGetStartedPressed");
-
     navigation.navigate("SignIn");
   };
 
