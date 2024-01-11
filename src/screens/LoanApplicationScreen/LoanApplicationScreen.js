@@ -30,8 +30,6 @@ const LoanApplicationScreen = () => {
 
   const onPreviewPressed = () => {
     console.warn("onPreview Pressed");
-
-    //navigation.navigate("SignIn");
   };
 
   const [value, setValue] = useState(null);
