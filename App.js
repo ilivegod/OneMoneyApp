@@ -4,7 +4,7 @@ import SignInScreen from "./src/screens/SignInScreen";
 import SignUpScreen from "./src/screens/SignUpScreen";
 import AccountVerificationScreen from "./src/screens/AccountVerificationScreen";
 import SplashScreen from "./src/screens/SplashScreen";
-import Navigation from "./src/navigation";
+//import Navigation from "./src/navigation";
 import HomePage from "./src/screens/HomePage";
 import ForgotPasswordScreen from "./src/screens/ForgotPasswordScreen/ForgotPasswordScreen";
 import CheckEmailScreen from "./src/screens/CheckEmailScreen";
@@ -15,6 +15,7 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { useState } from "react";
 import LoanApplicationScreen from "./src/screens/LoanApplicationScreen";
 import NotificationsScreen from "./src/screens/NotificationsScreen";
+import TabNavigator from "./src/navigation/TabNavigator";
 
 const Stack = createNativeStackNavigator();
 
@@ -34,7 +35,7 @@ export default function App() {
           name="AccountVerification"
           component={AccountVerificationScreen}
         />
-        <Stack.Screen name="HomePage" component={HomePage} />
+        <Stack.Screen name="HomePage" component={TabNavigator} />
         <Stack.Screen name="ForgotPassword" component={ForgotPasswordScreen} />
         <Stack.Screen name="CheckEmail" component={CheckEmailScreen} />
         <Stack.Screen name="SetNewPassword" component={SetNewPasswordScreen} />
