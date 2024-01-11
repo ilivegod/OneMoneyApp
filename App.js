@@ -13,6 +13,7 @@ import SetNewPasswordScreen from "./src/screens/SetNewPasswordScreen";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { useState } from "react";
+import LoanApplicationScreen from "./src/screens/LoanApplicationScreen";
 
 const Stack = createNativeStackNavigator();
 
@@ -36,6 +37,10 @@ export default function App() {
         <Stack.Screen name="ForgotPassword" component={ForgotPasswordScreen} />
         <Stack.Screen name="CheckEmail" component={CheckEmailScreen} />
         <Stack.Screen name="SetNewPassword" component={SetNewPasswordScreen} />
+        <Stack.Screen
+          name="LoanApplication"
+          component={LoanApplicationScreen}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );

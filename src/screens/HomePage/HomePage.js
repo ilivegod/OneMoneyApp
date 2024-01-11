@@ -27,7 +27,7 @@ const HomePage = () => {
   const navigation = useNavigation();
 
   const createAppPress = () => {
-    console.warn("createAppPress");
+    navigation.navigate("LoanApplication");
   };
 
   const onPress = () => {
