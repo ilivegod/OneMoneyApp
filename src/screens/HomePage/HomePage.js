@@ -109,8 +109,6 @@ const HomePage = () => {
               </View>
             </TouchableOpacity>
           </View>
-
-          <Footer />
         </View>
       </ScrollView>
     </SafeAreaView>
