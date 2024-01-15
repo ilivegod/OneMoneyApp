@@ -29,9 +29,15 @@ const LoanApplicationScreen = () => {
   };
 
   const onPreviewPressed = () => {
+<<<<<<< Updated upstream
     console.warn("onPreview Pressed");
 
     //navigation.navigate("SignIn");
+=======
+    //console.warn("onPreview Pressed");
+    navigation.navigate("LoanApplication2");
+    
+>>>>>>> Stashed changes
   };
 
   const [value, setValue] = useState(null);

@@ -14,6 +14,11 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { useState } from "react";
 import LoanApplicationScreen from "./src/screens/LoanApplicationScreen";
+<<<<<<< Updated upstream
+=======
+import LoanApplicationScreen2 from "./src/screens/LoanApplicationScreen2";
+import PendingApproval from "./src/screens/PendingApproval";
+>>>>>>> Stashed changes
 
 const Stack = createNativeStackNavigator();
 
@@ -41,6 +46,12 @@ export default function App() {
           name="LoanApplication"
           component={LoanApplicationScreen}
         />
+<<<<<<< Updated upstream
+=======
+        <Stack.Screen name="LoanApplication2" component={LoanApplicationScreen2} />
+        <Stack.Screen name="PendingApproval" component={PendingApproval} />
+
+>>>>>>> Stashed changes
       </Stack.Navigator>
     </NavigationContainer>
   );
