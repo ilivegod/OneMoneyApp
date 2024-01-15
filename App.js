@@ -14,6 +14,10 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { useState } from "react";
 import LoanApplicationScreen from "./src/screens/LoanApplicationScreen";
+import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+import TabNavigator from "./src/navigation/TabNavigator";
+import LoanApplicationScreen2 from "./src/screens/LoanApplicationScreen2";
+import PendingApproval from "./src/screens/PendingApproval";
 
 const Stack = createNativeStackNavigator();
 
@@ -37,9 +41,14 @@ export default function App() {
         <Stack.Screen name="ForgotPassword" component={ForgotPasswordScreen} />
         <Stack.Screen name="CheckEmail" component={CheckEmailScreen} />
         <Stack.Screen name="SetNewPassword" component={SetNewPasswordScreen} />
+        <Stack.Screen name="PendingApproval" component={PendingApproval} />
         <Stack.Screen
           name="LoanApplication"
           component={LoanApplicationScreen}
+        />
+        <Stack.Screen
+          name="LoanApplication2"
+          component={LoanApplicationScreen2}
         />
       </Stack.Navigator>
     </NavigationContainer>

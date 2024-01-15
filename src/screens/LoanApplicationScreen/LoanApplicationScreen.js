@@ -29,10 +29,9 @@ const LoanApplicationScreen = () => {
   };
 
   const onPreviewPressed = () => {
-<<<<<<< Updated upstream
     console.warn("onPreview Pressed");
 
-    //navigation.navigate("SignIn");
+    navigation.navigate("LoanApplication2");
   };
 
   const [value, setValue] = useState(null);
@@ -41,23 +40,17 @@ const LoanApplicationScreen = () => {
   const data1 = [
     { label: "Education", value: "1" },
     { label: "Health", value: "2" },
-    { label: "Upkeep", value: "3" },
-    { label: "Item 4", value: "4" },
-    { label: "Item 5", value: "5" },
-    { label: "Item 6", value: "6" },
-    { label: "Item 7", value: "7" },
-    { label: "Item 8", value: "8" },
+    { label: "Family", value: "3" },
+    { label: "Upkeep 4", value: "4" },
+    { label: "Personal 5", value: "5" },
+    { label: "Other 6", value: "6" },
   ];
 
   const data2 = [
     { label: "One Month", value: "1" },
     { label: "Two Months", value: "2" },
     { label: "Three Months", value: "3" },
-    { label: "Item 4", value: "4" },
-    { label: "Item 5", value: "5" },
-    { label: "Item 6", value: "6" },
-    { label: "Item 7", value: "7" },
-    { label: "Item 8", value: "8" },
+    { label: "Four Months", value: "4" },
   ];
 
   return (
