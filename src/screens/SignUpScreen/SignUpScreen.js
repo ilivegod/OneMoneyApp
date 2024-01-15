@@ -19,6 +19,9 @@ import { doc, setDoc } from "firebase/firestore";
 import { useNavigation } from "@react-navigation/native";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../../../firebase/firebase";
+import { getFirestore } from "firebase/firestore";
+
+const db = getFirestore();
 
 const SignUpScreen = () => {
   const [fullname, setFullname] = useState("");
@@ -30,12 +33,7 @@ const SignUpScreen = () => {
 
   const navigation = useNavigation();
 
-  // const onRegisterPressed = () => {
-  //   console.warn("onRegisterPressed");
-
-  //   //Register user
-  //   navigation.navigate("AccountVerification");
-  // };
+  const db = getFirestore();
 
   // handle sign up function to add to the button in order for firebase to work.
   const onRegisterPressed = async () => {

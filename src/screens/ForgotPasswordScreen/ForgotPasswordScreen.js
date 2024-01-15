@@ -14,13 +14,18 @@ import CustomButton from "../../components/CustomButton";
 import CustomLink from "../../components/CustomLink";
 import RetryButton from "../../components/RetryButton";
 import padlock from "../../../assets/images/Lock.png";
+import { useNavigation } from "@react-navigation/native";
 import { sendPasswordResetEmail } from "firebase/auth";
+import { FirebaseApp } from "firebase/app";
+import { auth } from "../../../firebase/firebase";
 // import { TouchableOpacity } from "react-native-gesture-handler";
 
 const ForgotPasswordScreen = () => {
   const [email, setEmail] = useState("");
 
   const { height } = useWindowDimensions();
+
+  const navigation = useNavigation();
 
   const onResetPressed = async () => {
     await sendPasswordResetEmail(auth, email)
@@ -29,6 +34,7 @@ const ForgotPasswordScreen = () => {
   };
 
   const onLoginPressed = () => {
+    navigation.navigate("SignIn");
     console.warn("onLoginPress");
   };
 

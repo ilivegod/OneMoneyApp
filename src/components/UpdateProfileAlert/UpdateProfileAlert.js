@@ -9,7 +9,8 @@ const UpdateProfileAlert = (
   BigAlertMessage,
   SmallAlertMessage,
   handlePress,
-  handleClose
+  handleClose,
+  props
 ) => {
   return (
     <TouchableOpacity style={styles.BigButton} onPress={handlePress}>
@@ -18,7 +19,7 @@ const UpdateProfileAlert = (
         {/* {BigAlertMessage} */}
         Update your profile to keep going.
       </Text>
-      <TouchableOpacity onPress={handleClose}>
+      <TouchableOpacity onPress={() => props.hideAlert()}>
         <Image source={cross} style={styles.cross} />
       </TouchableOpacity>
       <Text style={styles.SmallAlertMessage}>

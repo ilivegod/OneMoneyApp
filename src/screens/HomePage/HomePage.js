@@ -10,20 +10,26 @@ import {
 } from "react-native";
 import React from "react";
 import { useState } from "react";
+import { useEffect } from "react";
 import NameHeader from "../../components/NameHeader";
-import UpdateProfileAlert from "../../components/UpdateProfileAlert/UpdateProfileAlert";
 import StartNowBox from "../../components/StartNowBox/StartNowBox";
 import BorrowersList from "../../components/BorrowersList/BorrowersList";
-import Footer from "../../components/Footer/Footer";
 import HomeButton from "../../components/HomeButton";
 import { useNavigation } from "@react-navigation/native";
 import plus from "../../../assets/images/gala_add.png";
 import arrow from "../../../assets/images/OneMoneyarrow-right.png";
 import Faces from "../../../assets/images/Faces.png";
+import { Firestore } from "firebase/firestore";
+import { doc, getDoc } from "firebase/firestore";
+import { collection, getDocs } from "firebase/firestore";
+import { getFirestore } from "firebase/firestore";
+
+import profilePicture from "../../../assets/images/OneMoneyCapa_2.png";
 
 const HomePage = () => {
-  // const [name, setName] = useState("");
   const [username, setUsername] = useState("");
+  const [userInfo, setUserInfo] = useState("");
+
   const navigation = useNavigation();
 
   const createAppPress = () => {
@@ -34,18 +40,53 @@ const HomePage = () => {
     console.warn("contact sales pressed");
   };
 
-  // useLayoutEffect(() => {
-  //   navigation.setOptions({
-  //     headerShown: false,
-  //   });
-  // }, []);
+  const fetchData = async () => {
+    const docRef = doc(db, "users", "6ryq0bI9FjfK5k1SJQ3ctCn31v03");
+    const docSnap = await getDoc(docRef);
+
+    if (docSnap.exists()) {
+      console.log("Document data:", docSnap.data());
+      setUserInfo(docSnap.data());
+    } else {
+      // docSnap.data() will be undefined in this case
+      console.log("No such document!");
+    }
+  };
+
+  const db = getFirestore();
+
+  const getData = async () => {
+    const querySnapshot = await getDocs(collection(db, "users"));
+    querySnapshot.forEach((doc) => {
+      console.log(doc.id, " => ", doc.data());
+      setUserInfo(doc.data());
+    });
+  };
+
+  useEffect(() => {
+    //fetchData();
+    getData();
+  }, []);
 
   return (
     <SafeAreaView>
       <ScrollView showsVerticalScrollIndicator={false}>
         <View style={styles.root}>
-          <UpdateProfileAlert />
-          <NameHeader dimension="60%" />
+          <View style={styles.container}>
+            <Image
+              source={profilePicture}
+              style={styles.profile}
+              resizeMode="contain"
+            />
+            <View>
+              {/* <Text style={styles.fullName}>Hi{userInfo?.Name},</Text> */}
+              <Text style={styles.fullName}>Hi {userInfo?.Name},</Text>
+
+              <Text style={styles.nameMessage}>
+                Access loans from us today!
+              </Text>
+            </View>
+          </View>
 
           <View style={styles.request}>
             <Text style={styles.requestTitle}>Request a loan</Text>
@@ -109,8 +150,6 @@ const HomePage = () => {
               </View>
             </TouchableOpacity>
           </View>
-
-          <Footer />
         </View>
       </ScrollView>
     </SafeAreaView>
@@ -123,6 +162,32 @@ const styles = StyleSheet.create({
     flex: 1,
     paddingTop: 20,
     width: 342,
+  },
+
+  container: {
+    position: "relative",
+    right: 10,
+
+    flexDirection: "row",
+    marginTop: 25,
+    marginBottom: 25,
+  },
+
+  profile: {
+    width: "20%",
+    maxWidth: 300,
+  },
+
+  fullName: {
+    fontSize: 26,
+    fontWeight: "600",
+    textAlign: "left",
+  },
+
+  nameMessage: {
+    fontWeight: "300",
+    textAlign: "left",
+    position: "relative",
   },
 
   request: {
