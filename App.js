@@ -14,6 +14,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { useState } from "react";
 import LoanApplicationScreen from "./src/screens/LoanApplicationScreen";
+import LoanApplicationScreen2 from "./src/screens/LoanApplicationScreen2";
 
 const Stack = createNativeStackNavigator();
 
@@ -41,6 +42,8 @@ export default function App() {
           name="LoanApplication"
           component={LoanApplicationScreen}
         />
+        <Stack.Screen name="LoanApplication2" component={LoanApplicationScreen2} />
+
       </Stack.Navigator>
     </NavigationContainer>
   );

@@ -29,8 +29,8 @@ const LoanApplicationScreen = () => {
   };
 
   const onPreviewPressed = () => {
-    console.warn("onPreview Pressed");
-
+    //console.warn("onPreview Pressed");
+    navigation.navigate("LoanApplication2");
     //navigation.navigate("SignIn");
   };
 
