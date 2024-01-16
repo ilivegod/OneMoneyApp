@@ -24,9 +24,9 @@ Run the app: npm start
 Tech Stack
 
 Frontend: React Native
-Backend: 
-Database: MongoDB
-Authentication: 
+Backend: firebase
+Database: firestore
+Authentication: firebase
 Payment: 
 
 
